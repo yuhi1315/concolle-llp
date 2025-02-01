@@ -1,0 +1,42 @@
+@use 'sass:math';
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1200px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 30px;
+$padding-sp: 7.5px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$base-font-family: 'Noto Sans JP', 'Quicksand', sans-serif;
+$second-font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #221a15;
+$black-70: #6c6c6c;
+$black-50: #c9c9c9;
+$black-10: #f4f4f4;
+$white: #ffffff;
+$cream: #fffbf2;
+$primary-90: #eb537b;
+$primary-50: #f090a9;
+$primary-30: #ffcfdc;
+$primary-20: #ffecf1;
+$green: #0c8d8d;
+$AccentColor-50: #a4ecec;
+$AccentColor-80: #0c8d8d;

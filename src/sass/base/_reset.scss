@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  color: #221a15;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  font-family: 'Noto Sans JP', 'Robot', sans-serif;
+}
+
+label {
+  cursor: initial !important;
+}
+
+/* Blur images when they have no alt attribute */
+// img:not([alt]) {
+//   filter: blur(10px);
+// }
+
+/* フォームリセット */
+// input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+  font-family: 'Noto Sans JP', 'Robot', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+// input[type='checkbox'],
+// input[type='radio'] {
+//   display: none;
+// }
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+*::-webkit-scrollbar {
+  background-color: #f1f1f1;
+  width: 5px;
+  height: 3px;
+  @media (max-width: 768px) {
+    width: 3px;
+  }
+}
+
+/* スクロールバーのサム（つまみ）部分のスタイル */
+*::-webkit-scrollbar-thumb {
+  background-color: #4f5d6b;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a,
+button {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+a:hover,
+button:hover {
+  opacity: 0.7;
+}
+
+*::-webkit-scrollbar {
+  background-color: #f4f4f4;
+  width: 5px;
+  height: 6px;
+  border-radius: 24px;
+  border: 1px solid #221a15;
+  @media (max-width: 768px) {
+    width: 6px;
+  }
+}
+
+/* スクロールバーのサム（つまみ）部分のスタイル */
+*::-webkit-scrollbar-thumb {
+  background-color: #f090a9;
+  border-radius: 24px;
+  border: 1px solid #221a15;
+}

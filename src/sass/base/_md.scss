@@ -1,0 +1,16 @@
+/* リキッドレイアウト対応 */
+@use 'global' as *;
+
+.md-none {
+  display: block;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.md-show {
+  display: none;
+  @include mq('md') {
+    display: block;
+  }
+}

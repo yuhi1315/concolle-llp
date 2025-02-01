@@ -1,0 +1,67 @@
+// どっちファーストの設定（"sp" or "pc"）
+$startFrom: pc;
+
+// デフォルト値を設定
+$mediaquerys: (
+  sp: 'screen',
+  sm: 'screen',
+  md: 'screen',
+  lg: 'screen',
+  sxl: 'screen',
+  xl: 'screen',
+  xxl: 'screen'
+);
+
+@if $startFrom == sp {
+  //スマホファースト
+  $breakpoints: (
+    sp: 420,
+    sm: 600,
+    md: 768,
+    lg: 1024,
+    lgx: 1300,
+    sxl: 1400,
+    xl: 1440,
+    xxl: 2000
+  );
+
+  //メディアクエリー
+  $mediaquerys: (
+    sp: "screen and (min-width: #{map-get($breakpoints,'sp')}px)",
+    sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+    md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+    lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+    lgx: "screen and (min-width: #{map-get($breakpoints,'lgx')}px)",
+    sxl: "screen and (min-width: #{map-get($breakpoints,'sxl')}px)",
+    xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+    xxl: "screen and (min-width: #{map-get($breakpoints,'xxl')}px)"
+  );
+} @else {
+  $breakpoints: (
+    xxl: 2000,
+    xl: 1440,
+    sxl: 1400,
+    lg: 1023,
+    lgx: 1300,
+    md: 767,
+    sm: 600,
+    sp: 420
+  );
+  $mediaquerys: (
+    sp: "screen and (max-width: #{map-get($breakpoints,'sp')}px)",
+    sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+    md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+    lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+    lgx: "screen and (max-width: #{map-get($breakpoints,'lgx')}px)",
+    sxl: "screen and (max-width: #{map-get($breakpoints,'sxl')}px)",
+    xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+    xxl: "screen and (min-width: #{map-get($breakpoints,'xxl')}px)"
+  );
+}
+
+// @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
