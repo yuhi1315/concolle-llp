@@ -1,2 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja"></html>
+<html lang="ja">
+  <%- include('../ejs-parts/base/_head.ejs') %>
+  <body>
+    <!-- ヘッダー -->
+    <%- include('../ejs-parts/base/_header.ejs') %>
+    <main>
+      <div class="concolle">
+        <div class="concolle__wrapper">
+          <div class="concolle__mv">
+            <div class="concolle__mv-inner">
+              <div class="concolle__mv-header"></div>
+              <div class="concolle__mv-title"><%- include('../ejs-parts/common/_mv-title.ejs') %></div>
+            </div>
+          </div>
+          <section class="concolle__messge"></section>
+          <section class="concolle__worries"></section>
+          <section class="concolle__charm"></section>
+          <section class="concolle__flow"></section>
+          <section class="concolle__question"></section>
+          <section class="concolle__form"></section>
+        </div>
+      </div>
+    </main>
+    <%- include('../ejs-parts/base/_footer.ejs') %>
+  </body>
+</html>
