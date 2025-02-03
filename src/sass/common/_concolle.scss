@@ -10,9 +10,12 @@
   background-image: url('../images/common/fv-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #fffbf2;
+  background-position: bottom;
 }
 
 .concolle__mv-inner {
+  padding-bottom: 16px;
 }
 
 .concolle__mv-buttons {

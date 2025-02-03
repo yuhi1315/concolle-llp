@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #fffbf2;
+  background-position: top;
 }
 
 .mission__inner {
@@ -74,6 +76,7 @@
 }
 
 .mission__box {
+  margin-top: 104px;
   background-image: url('../images/common/bg-box.png');
   background-size: cover;
   background-position: center;
