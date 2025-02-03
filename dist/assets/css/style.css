@@ -562,6 +562,104 @@ button:hover {
 	width: 100%;
 }
 
+.mission {
+	background-image: url("../images/common/bg-mission.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mission__inner {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 96px;
+	padding-top: 106px;
+}
+
+.mission__title {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.mission__english {
+	margin: 0 auto;
+}
+
+.mission__english-icon {
+	margin: 0 auto;
+	max-width: 32.97px;
+	width: 100%;
+}
+
+.mission__english-icon img {
+	aspect-ratio: 32.97/39.09;
+	width: 100%;
+}
+
+.mission__english-text {
+	color: #eb537b;
+	font-family: Quicksand;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.mission__heading {
+	color: #eb537b;
+	font-family: Zen Maru Gothic;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1.6;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.mission__title-gradation {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #ff408c;
+	background: linear-gradient(93.23deg, #ffd8e8 0%, #ffcaba 50%, #ffef9b 100%);
+	background-clip: text;
+	font-family: Zen Maru Gothic;
+	font-size: 64px;
+	font-weight: 800;
+	letter-spacing: -0.05em;
+	line-height: 1;
+	text-align: center;
+	text-align: center;
+}
+
+.mission__box {
+	background-image: url("../images/common/bg-box.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid #221a15;
+	border-radius: 16px;
+	height: 348px;
+	width: 100%;
+}
+
+.mission__heading-white {
+	-webkit-text-decoration-skip-ink: none;
+	-webkit-text-stroke: 3px #eb537b;
+	color: #fff;
+	font-family: "Zen Maru Gothic";
+	font-size: 64px;
+	font-weight: 800 !important;
+	letter-spacing: 0.05em;
+	line-height: 64px;
+	text-align: center;
+	text-decoration-skip-ink: none;
+	text-shadow: 3px 3px 0px #eb537b;
+	text-underline-position: from-font;
+}
+
 .mv-title {
 	align-items: center;
 	display: flex;

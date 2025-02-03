@@ -6,7 +6,7 @@
     <main>
       <div class="concolle">
         <div class="concolle__wrapper">
-          <div class="concolle__mv">
+          <section class="concolle__mv">
             <div class="concolle__mv-inner inner">
               <div class="concolle__header"><%- include('../ejs-parts/base/_header.ejs') %></div>
               <div class="concolle__mv-title"><%- include('../ejs-parts/common/_mv-title.ejs') %></div>
@@ -19,7 +19,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+          <section class="concolle__mission">
+            <div class="concolle__mission-content"><%- include('../ejs-parts/common/_mission.ejs') %></div>
+          </section>
           <section class="concolle__messge"></section>
           <section class="concolle__worries"></section>
           <section class="concolle__charm"></section>
