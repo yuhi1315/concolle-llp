@@ -1,0 +1,116 @@
+@use 'global' as *;
+
+.common-btn__message-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-btn__message {
+  color: #0c8d8d;
+  margin-bottom: rem(8);
+  display: flex;
+  align-items: anchor-center;
+  font-family: Zen Maru Gothic;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.common-btn--inquiry .common-btn__message {
+  color: #eb537b;
+}
+
+.common-btn__message-wrapper::before,
+.common-btn__message-wrapper::after {
+  content: '';
+  position: relative;
+  width: rem(24);
+  height: rem(2);
+  background-color: #0c8d8d;
+}
+
+.common-btn--inquiry .common-btn__message-wrapper::before,
+.common-btn--inquiry .common-btn__message-wrapper::after {
+  background-color: #eb537b;
+}
+
+.common-btn__message-wrapper::after {
+  transform: rotate(-60deg);
+  right: rem(2);
+  bottom: rem(3);
+}
+.common-btn__message-wrapper::before {
+  transform: rotate(-120deg);
+  left: rem(2);
+  bottom: rem(5);
+}
+
+.common-btn__message span {
+  margin-right: rem(2);
+  max-width: 129px;
+  width: 100%;
+}
+.common-btn__message span img {
+  aspect-ratio: 129 / 22;
+  width: 100%;
+}
+
+.common-btn--inquiry .common-btn__message span {
+  max-width: 135px;
+  width: 100%;
+  margin-left: rem(2);
+  margin-right: rem(0);
+}
+.common-btn--inquiry .common-btn__message span img {
+  aspect-ratio: 135 / 22;
+  width: 100%;
+}
+
+.common-btn__button {
+  position: relative;
+  width: 100%;
+  color: white;
+  background: #a4ecec;
+  background-image: linear-gradient(183.86deg, #73dede 3.09%, #2da6a6 96.78%);
+  border: rem(1) solid $black;
+  padding: rem(24) rem(90) rem(24) rem(66);
+  border-radius: rem(180);
+  font-size: rem(24);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: left;
+  box-shadow: rem(0) rem(3) rem(0) rem(0) $black;
+}
+
+.common-btn__button::after {
+  content: '';
+  position: absolute;
+  width: rem(44);
+  height: rem(44);
+  background-image: url('../images/common/icon-arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: rem(14);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.common-btn__button span {
+  white-space: nowrap;
+}
+
+.common-btn--inquiry .common-btn__button {
+  background: #f7afc2;
+  background-image: linear-gradient(183.86deg, #f7afc2 3.3%, #eb537b 96.99%);
+}
+
+.common-btn__message text {
+  fill: white;
+  stroke: dimgray;
+  stroke-width: 3;
+  paint-order: stroke;
+}

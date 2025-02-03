@@ -1,6 +1,9 @@
 @use 'global' as *;
 
 .mv-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mv-title__heading {
@@ -10,6 +13,7 @@
 }
 
 .mv-title__top {
+  margin-right: rem(42);
   max-width: 815px;
   width: 100%;
 }
@@ -19,10 +23,36 @@
 }
 
 .mv-title__bottom {
+  margin-top: rem(2);
   max-width: 981px;
   width: 100%;
 }
 .mv-title__bottom img {
   aspect-ratio: 981 / 226;
+  width: 100%;
+}
+
+.mv-title__ribbon {
+  max-width: rem(425.38);
+  width: 100%;
+}
+.mv-title__ribbon img {
+  aspect-ratio: 425.38 / 79.08;
+  width: 100%;
+}
+
+.mv-title__crowns {
+  margin-top: rem(18);
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+}
+
+.mv-title__crown {
+  max-width: 175px;
+  width: 100%;
+}
+.mv-title__crown img {
+  aspect-ratio: 175 / 152;
   width: 100%;
 }

@@ -1,0 +1,45 @@
+<%
+<!-- prettier-ignore -->
+const publishText = `
+<span>
+  <img src="../assets/images/common/text-publish.svg" alt="スピード審査" />
+</span>
+<p>ですぐに掲載！</p>
+`;
+<!-- prettier-ignore -->
+const inquiryText = `
+<p>まずは</p>
+<span>
+  <img src="../assets/images/common/text-inquiry.svg" alt="お問い合わせ" />
+</span>
+<p>してみる</p>
+`;
+<!-- prettier-ignore -->
+
+let buttonText = ""; // 初期値を空に設定
+let messageText = ""; // 初期値を空に設定
+switch (type) {
+  case 'publish':
+    buttonText = "今すぐ無料掲載する";
+    messageText = publishText;
+    break;
+  case 'inquiry':
+  buttonText = "お問い合わせ";
+  messageText = inquiryText;
+    break;
+  default:
+    text = "";
+    break;
+}
+%>
+
+<div class="common-btn common-btn--<%= type %>">
+  <div class="common-btn__wrapper">
+    <div class="common-btn__message-wrapper">
+      <div class="common-btn__message"><%- messageText %></div>
+    </div>
+    <button class="common-btn__button">
+      <span><%- buttonText %></span>
+    </button>
+  </div>
+</div>

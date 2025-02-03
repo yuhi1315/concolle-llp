@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Pacifico&family=Quicksand:wght@300..700&family=Zen+Maru+Gothic:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&family=Quicksand:wght@300..700&family=Zen+Maru+Gothic:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- ファビコン -->
@@ -36,35 +36,39 @@
 
   <body>
     <!-- ヘッダー -->
-    <header class="header js-header">
-      <div class="header__container">
-        <ul class="header__menu">
-          <li class="header__menu-home">
-            <a href="#"> ホーム </a>
-          </li>
-          <li class="header__menu-item"><a href="#">お店を探す</a></li>
-          <li class="header__menu-item"><a href="#">キャストを探す</a></li>
-          <li class="header__menu-item">
-            <a href="../ranking/ranking-list.html">お店ランキング</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="../ranking/ranking-list.html">キャストランキング</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="../blog/blog-list.html">ブログ</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
     <main>
       <div class="concolle">
         <div class="concolle__wrapper">
           <div class="concolle__mv">
-            <div class="concolle__mv-inner">
-              <div class="concolle__mv-header"></div>
+            <div class="concolle__mv-inner inner">
+              <div class="concolle__header">
+                <header class="header">
+                  <div class="header__container">
+                    <div class="header__left">
+                      <p class="header__text">
+                        全国コンカフェ情報<span>「コンコレ」</span>
+                      </p>
+                      <div class="header__logo">
+                        <img
+                          src="../assets/images/common/icon-logo.svg"
+                          alt="コンコレのロゴ"
+                        />
+                      </div>
+                    </div>
+                    <div class="header__right">
+                      <button class="header__button">無料掲載のお申込み</button>
+                    </div>
+                  </div>
+                </header>
+              </div>
               <div class="concolle__mv-title">
                 <div class="mv-title">
+                  <div class="mv-title__ribbon">
+                    <img
+                      src="../assets/images/common/text-ribbon.svg"
+                      alt="全国のコンカフェを全力おうえん！"
+                    />
+                  </div>
                   <h1 class="mv-title__heading">
                     <div class="mv-title__top">
                       <img
@@ -79,6 +83,69 @@
                       />
                     </div>
                   </h1>
+                  <div class="mv-title__crowns">
+                    <div class="mv-title__crown">
+                      <img
+                        src="../assets/images/common/icon-crown-1.svg"
+                        alt="掲載料金0円〜"
+                      />
+                    </div>
+                    <div class="mv-title__crown">
+                      <img
+                        src="../assets/images/common/icon-crown-2.svg"
+                        alt="完全無料で全機能が使える"
+                      />
+                    </div>
+                    <div class="mv-title__crown">
+                      <img
+                        src="../assets/images/common/icon-crown-3.svg"
+                        alt="ユーザーランキング第1位"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="concolle__mv-buttons">
+                <div class="concolle__mv-button">
+                  <div class="common-btn common-btn--publish">
+                    <div class="common-btn__wrapper">
+                      <div class="common-btn__message-wrapper">
+                        <div class="common-btn__message">
+                          <span>
+                            <img
+                              src="../assets/images/common/text-publish.svg"
+                              alt="スピード審査"
+                            />
+                          </span>
+                          <p>ですぐに掲載！</p>
+                        </div>
+                      </div>
+                      <button class="common-btn__button">
+                        <span>今すぐ無料掲載する</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="concolle__mv-button">
+                  <div class="common-btn common-btn--inquiry">
+                    <div class="common-btn__wrapper">
+                      <div class="common-btn__message-wrapper">
+                        <div class="common-btn__message">
+                          <p>まずは</p>
+                          <span>
+                            <img
+                              src="../assets/images/common/text-inquiry.svg"
+                              alt="お問い合わせ"
+                            />
+                          </span>
+                          <p>してみる</p>
+                        </div>
+                      </div>
+                      <button class="common-btn__button">
+                        <span>お問い合わせ</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
