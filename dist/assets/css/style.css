@@ -161,9 +161,9 @@
 .inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1520px;
-	padding-left: 40px;
-	padding-right: 40px;
+	max-width: 1320px;
+	padding-left: 30px;
+	padding-right: 30px;
 	width: 100%;
 }
 
@@ -568,6 +568,76 @@ button:hover {
 	width: 100%;
 }
 
+.message {
+	background-image: url("../images/common/bg-message.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.message__inner {
+	padding: 104px 0;
+}
+
+.message__top {
+	font-size: 32px;
+	font-weight: 600;
+	left: 1px;
+	letter-spacing: 0.04em;
+	line-height: 1.6;
+	position: relative;
+	text-align: center;
+}
+
+.message__bottom {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	left: -14px;
+	margin: 0 auto;
+	margin-top: 24px;
+	position: relative;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.message__bottom::after,
+.message__bottom::before {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	position: absolute;
+}
+
+.message__bottom::before {
+	background-image: url("../images/common/icon-left-star.svg");
+	height: 50px;
+	left: -69px;
+	top: -17px;
+	width: 47px;
+}
+
+.message__bottom::after {
+	background-image: url("../images/common/icon-right-star.svg");
+	height: 57px;
+	right: -49px;
+	top: 64px;
+	width: 47px;
+}
+
+.message__gradation {
+	position: relative;
+	z-index: 2;
+}
+
+.message__arrow-icon {
+	position: absolute;
+	right: -68px;
+	top: -47px;
+	z-index: -1;
+}
+
 .mission {
 	background-color: #fffbf2;
 	background-image: url("../images/common/bg-mission.svg");
@@ -627,6 +697,21 @@ button:hover {
 	text-align: center;
 }
 
+.mission__heading-white {
+	-webkit-text-decoration-skip-ink: none;
+	-webkit-text-stroke: 3px #eb537b;
+	color: #fff;
+	font-family: "Zen Maru Gothic";
+	font-size: 64px;
+	font-weight: 800 !important;
+	letter-spacing: 0.05em;
+	line-height: 64px;
+	text-align: center;
+	text-decoration-skip-ink: none;
+	text-shadow: 3px 3px 0px #eb537b;
+	text-underline-position: from-font;
+}
+
 .mission__title-gradation {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -651,22 +736,69 @@ button:hover {
 	border-radius: 16px;
 	height: 348px;
 	margin-top: 104px;
+	position: relative;
 	width: 100%;
 }
 
-.mission__heading-white {
-	-webkit-text-decoration-skip-ink: none;
-	-webkit-text-stroke: 3px #eb537b;
-	color: #fff;
-	font-family: "Zen Maru Gothic";
-	font-size: 64px;
-	font-weight: 800 !important;
-	letter-spacing: 0.05em;
-	line-height: 64px;
+.mission__box-list {
+	display: flex;
+	gap: 48px;
+	justify-content: center;
+	padding: 72px 32px 56px;
+}
+
+.mission__box-item {
+	align-items: center;
+	display: flex;
+	height: 220px;
+	max-width: 280px;
+	position: relative;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(2) {
+	max-width: 320px;
+}
+
+.mission__box-item:nth-child(3) {
+	max-width: 226px;
+}
+
+.mission__box-item-icon {
+	max-width: 202px;
+	position: relative;
+	width: 100%;
+}
+
+.mission__box-item-icon img {
+	aspect-ratio: 202/206;
+	width: 100%;
+}
+
+.mission__box-item-wrapper {
+	width: 100%;
+}
+
+.mission__box-text {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.6;
 	text-align: center;
-	text-decoration-skip-ink: none;
-	text-shadow: 3px 3px 0px #eb537b;
-	text-underline-position: from-font;
+}
+
+.mission__box-text-bold {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px #eb537b;
+	background: linear-gradient(93.23deg, #fff9ec 0%, #ffe9b8 50.7%, #fff9ea 100%);
+	background-clip: text;
+	display: inline-block; /* インライン要素の場合は必要 */
+	font-family: Zen Maru Gothic;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 1;
+	text-align: left;
 }
 
 .mv-title {
@@ -862,6 +994,43 @@ button:hover {
 
 .sub-title__big {
 	font-size: 2rem;
+}
+
+.message__top {
+	font-size: 16px;
+}
+
+.message__bottom {
+	left: 0;
+	width: auto;
+}
+
+.message__bottom::after {
+	display: none;
+}
+
+.message__left {
+	max-width: 182px;
+	width: 100%;
+}
+
+.message__left img {
+	aspect-ratio: 182/36;
+	width: 100%;
+}
+
+.message__gradation {
+	max-width: 132px;
+	width: 100%;
+}
+
+.message__gradation img {
+	aspect-ratio: 132/44;
+	width: 100%;
+}
+
+.message__arrow-icon {
+	display: none;
 }
 
 }

@@ -6,6 +6,23 @@
     <main>
       <div class="concolle">
         <div class="concolle__wrapper">
+          <section class="concolle__mv">
+            <div class="concolle__mv-inner inner">
+              <div class="concolle__header"><%- include('../ejs-parts/base/_header.ejs') %></div>
+              <div class="concolle__mv-title"><%- include('../ejs-parts/common/_mv-title.ejs') %></div>
+              <div class="concolle__mv-buttons">
+                <div class="concolle__mv-button">
+                  <%- include('../ejs-parts/common/_common-btn.ejs',{type: 'publish'}) %>
+                </div>
+                <div class="concolle__mv-button">
+                  <%- include('../ejs-parts/common/_common-btn.ejs',{type: 'inquiry'}) %>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="concolle__mission">
+            <div class="concolle__mission-content"><%- include('../ejs-parts/common/_mission.ejs') %></div>
+          </section>
           <section class="concolle__messge"><%- include('../ejs-parts/common/_message.ejs') %></section>
           <section class="concolle__worries inner"><%- include('../ejs-parts/common/_worries.ejs') %></section>
           <section class="concolle__charm inner"><%- include('../ejs-parts/common/_charm.ejs') %></section>
