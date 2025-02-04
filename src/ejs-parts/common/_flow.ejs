@@ -1,0 +1,33 @@
+<%
+<!-- prettier-ignore -->
+const items = [
+  { isMovie: false, isActive: false ,isBlur: false}, // 1
+  { isMovie: false, isActive: true ,isBlur: false },  // 2
+  { isMovie: false, isActive: true ,isBlur: false },  // 2
+];
+%>
+
+<div class="flow">
+  <div class="flow__wrapper">
+    <p class="flow__text">スピーディーな審査ですぐに掲載可能！</p>
+    <h2 class="flow__title">
+      <img src="../assets/images/common/text-flow.png" alt="掲載までの流れ" />
+    </h2>
+    <ul class="flow__step">
+      <% items.forEach((item, i) => { %>
+      <li class="flow__step-item">
+        <div class="flow__step-left">
+          <img src="../assets/images/common/icon-step-<%= i + 1 %>.svg" alt="お申し込み" />
+        </div>
+        <div class="flow__step-right">
+          <div class="flow__step-tag">
+            <img src="../assets/images/common/icon-step-tag-<%= i + 1 %>.svg" alt="お申し込み" />
+          </div>
+          <p class="flow__step-title">まずはフォームから無料掲載にお申し込み</p>
+          <p class="flow__step-description">本ページ下のフォームにて必要情報を入力して送信！</p>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
+</div>

@@ -426,6 +426,126 @@ button:hover {
 	text-align: center;
 }
 
+.charm {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 104px 0;
+}
+
+.charm__wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.charm__title {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.charm__text {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.charm__title-main {
+	max-width: 289px;
+	width: 100%;
+}
+
+.charm__title-main img {
+	-o-object-fit: cover;
+	aspect-ratio: 289/96;
+	object-fit: cover;
+	width: 100%;
+}
+
+.charm__items {
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+	margin-top: 48px;
+}
+
+.charm__item {
+	background-color: #fff4f4;
+	border: 1px solid #221a15;
+	border-radius: 8px;
+	box-shadow: 4px 4px 0px 0px #221a15;
+	padding: 40px;
+	position: relative;
+}
+
+.charm__item-icon {
+	left: -42px;
+	max-width: 122px;
+	position: absolute;
+	top: -60px;
+	width: 100%;
+}
+
+.charm__item-icon img {
+	-o-object-fit: cover;
+	aspect-ratio: 122/108;
+	object-fit: cover;
+	width: 100%;
+}
+
+.charm__item-wrapper {
+	align-items: flex-start;
+	display: flex;
+	gap: 40px;
+}
+
+.charm__item-img {
+	max-width: 280px;
+	width: 100%;
+}
+
+.charm__item-img img {
+	-o-object-fit: cover;
+	aspect-ratio: 280/180;
+	object-fit: cover;
+	width: 100%;
+}
+
+.charm-item__content {
+	flex: 1;
+}
+
+.charm__item-title {
+	color: #eb537b;
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.charm__item-text {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	line-height: 1.8;
+	margin-top: 16px;
+	text-align: left;
+}
+
+.charm__item:nth-child(2) .charm__item-wrapper {
+	flex-direction: row-reverse;
+}
+
+.charm__item:nth-child(2) .charm__item-icon {
+	left: auto;
+	right: -42px;
+}
+
 .common-btn__message-wrapper {
 	align-items: center;
 	display: flex;
@@ -569,12 +689,121 @@ button:hover {
 }
 
 .concolle__worries {
-	background-color: #fffbf2;
 	background-image: url(../images/common/bg-worry.png);
 	background-position: center 29px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 1114px;
+}
+
+.concolle__charm {
+	background-color: #fffbf2;
+	background-image: url(../images/common/bg-charm.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.concolle__flow {
+	background-color: #fffbf2;
+	background-image: url(../images/common/bg-flow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flow__wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 104px 0;
+	width: 100%;
+}
+
+.flow__text {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.flow__title {
+	margin: 0 auto;
+	max-width: 480px;
+	width: 100%;
+}
+
+.flow__title img {
+	-o-object-fit: cover;
+	aspect-ratio: 480/90;
+	object-fit: cover;
+	width: 100%;
+}
+
+.flow__step {
+	background-color: white;
+	border-radius: 16px;
+	margin-top: 104px;
+	padding: 80px;
+}
+
+.flow__step-item {
+	align-items: flex-start;
+	display: flex;
+	gap: 40px;
+}
+
+.flow__step-left {
+	max-width: 174px;
+	width: 100%;
+}
+
+.flow__step-left img {
+	-o-object-fit: cover;
+	aspect-ratio: 174/251;
+	object-fit: cover;
+	width: 100%;
+}
+
+.flow__step-right {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-top: 16px;
+}
+
+.flow__step-tag {
+	height: 37px;
+	width: 157.64px;
+}
+
+.flow__step-title {
+	color: #eb537b;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.flow__step-description {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.flow__step-item:nth-child(2) .flow__step-left img {
+	-o-object-fit: cover;
+	aspect-ratio: 174/263;
+	object-fit: cover;
+	width: 100%;
+}
+
+.flow__step-item:nth-child(3) .flow__step-left img {
+	-o-object-fit: cover;
+	aspect-ratio: 174/191;
+	object-fit: cover;
+	width: 100%;
 }
 
 .message {

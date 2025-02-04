@@ -1,0 +1,37 @@
+<%
+<!-- prettier-ignore -->
+const items = [
+  { title: "掲載料金0円！", text: `コンコレは全国のコンカフェさまを応援しているので、<br />掲載無料ですべての機能が利用可能！`},
+{ title: "お手続き簡単、今すぐ掲載！", text: `簡単ステップなお手続き&スピーディーな審査で、<br />すぐに掲載をスタートできる！`},
+{ title: "すべてのコンカフェを応援！", text:
+`無料掲載に加え、お店の情報やブログを更新すればするほどお客様の目にとまりやすくなるシステム！<br />集客効果がぐんぐんUP！`},
+]; %>
+
+<div class="charm">
+  <div class="charm__wrapper">
+    <div class="charm__title">
+      <span class="charm__text">コンコレが多くのコンカフェさまに選ばれる</span>
+      <h2 class="charm__title-main">
+        <img src="../assets/images/common/text-charm.png" alt="3つの魅力" />
+      </h2>
+    </div>
+    <ul class="charm__items">
+      <% items.forEach((item, i) => { %>
+      <li class="charm__item">
+        <div class="charm__item-icon">
+          <img src="../assets/images/common/icon-point-<%= i + 1 %>.svg" alt="ポイントのアイコン" />
+        </div>
+        <div class="charm__item-wrapper">
+          <div class="charm__item-img">
+            <img src="../assets/images/common/img-point-<%= i + 1 %>.png" alt="ポイントの画像" />
+          </div>
+          <div class="charm-item__content">
+            <h3 class="charm__item-title"><%- item.title %></h3>
+            <p class="charm__item-text"><%- item.text %></p>
+          </div>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
+</div>
