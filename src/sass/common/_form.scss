@@ -1,1 +1,152 @@
 @use 'global' as *;
+
+.concolle-form__inner {
+  padding: 64px 0 104px;
+}
+input::placeholder {
+  color: #8d9999;
+}
+
+.concolle-form__wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.concolle-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.concolle-form__group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.concolle-form__label {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-right: 8px;
+}
+
+.concolle-form__label-required {
+  color: white;
+  background-color: $black;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.concolle-form__label-optional {
+  color: white;
+  background-color: #8d9999;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.concolle-form__input {
+  padding: 12px;
+  border: 1px solid #3e4d4c;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.concolle-form__input:focus {
+  outline: none;
+  border-color: #00acc1;
+}
+
+.concolle-form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.concolle-form__button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bdbd;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.4px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 48px;
+  padding: 16px;
+  display: flex;
+  max-width: 434px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  @include mq(md) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.concolle-form__button-text {
+}
+
+.concolle-form__button span {
+  position: absolute;
+  right: 18px;
+  max-width: 20px;
+  width: 100%;
+}
+.concolle-form__button span img {
+  aspect-ratio: 1;
+}
+
+.concolle-form__button:hover {
+  background-color: #00838f;
+}
+
+.concolle-form__error-message {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none; /* 初期状態では非表示 */
+}
+
+.concolle-form__note {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #8d9999;
+  margin-top: 8px;
+}
+
+.concolle-form__copy {
+  padding-top: 80px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  @include mq(md) {
+    padding-top: 0;
+  }
+}
