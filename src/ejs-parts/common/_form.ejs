@@ -1,3 +1,17 @@
+<%
+<!-- prettier-ignore -->
+const items = [
+  { type: 'text', isRequired: true, label: "店名・社名" ,id: "company-name" ,placeholder:"例）株式会社コンコレ",annotation:'' },
+  { type: 'text', isRequired: false, label: "担当者名" ,id: "name" ,placeholder:"例）山田　花子",annotation:'※姓と名の間に全角スペースを入れてください。' },
+  { type: 'text', isRequired: false, label: "担当者名（フリガナ）" ,id: "name-kana" ,placeholder:"例）ヤマダ　ハナコ",annotation:'※姓と名の間に全角スペースを入れ、全角カナでご入力ください。' },
+  { type: 'email', isRequired: true, label: "メールアドレス" ,id: "mail" ,placeholder:"例）info@concolle.com",annotation:'' },
+  { type: 'tel', isRequired: true, label: "電話番号" ,id: "tell" ,placeholder:"例）0123456789",annotation:'※半角数字でご入力ください。ハイフン(-)は不要です。' },
+  { type: 'text', isRequired: true, label: "ご住所" ,id: "address" ,placeholder:"例）東京都渋谷区〇〇",annotation:'' },
+  { type: 'url', isRequired: false, label: "URL" ,id: "address" ,placeholder:"例）https://concolle.com",annotation:'' },
+];
+
+%>
+
 <section class="concolle-form" id="concolle-form">
   <div class="concolle-form__inner">
     <div class="concolle-form__title section-title section-title--form">
@@ -8,76 +22,30 @@
 
     <div class="concolle-form__wrapper">
       <form id="apply-form" class="concolle-form__form">
+        <% items.forEach(item => { %>
         <div class="concolle-form__group">
           <label for="company" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            企業名（事業者名）
+            <span class="concolle-form__label-required"> <%= item.isRequired ? '必須' : '任意' %> </span>
+            <%= item.label %>
           </label>
+          <!-- prettier-ignore -->
           <input
-            type="text"
-            id="company"
-            name="company"
-            placeholder="例）株式会社あるバイ"
+            type="<%= item.type %>"
+            id="<%= item.id %>"
+            name="<%= item.id %>"
+            placeholder="<%= item.placeholder %>"
             class="concolle-form__input"
-            required
+            <%= item.isRequired ? 'required' : '' %>
           />
+          <% if (item.annotation) { %>
+          <p class="concolle-form__note"><%= item.annotation %></p>
+          <% } %>
           <p class="concolle-form__error-message" style="display: none"></p>
         </div>
-
-        <div class="concolle-form__group">
-          <label for="kana" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            企業名（事業者名）フリガナ
-          </label>
-          <input
-            type="text"
-            id="kana"
-            name="kana"
-            placeholder="例）カブシキガイシャアルバイ"
-            class="concolle-form__input"
-            required
-          />
-          <p class="concolle-form__note">※全角カナでご入力ください。</p>
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="email" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            メールアドレス
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="例）info@arubai.com"
-            class="concolle-form__input"
-            required
-          />
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="phone" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span>
-            電話番号
-          </label>
-          <input type="tel" id="phone" name="phone" placeholder="例）0123456789" class="concolle-form__input" />
-          <p class="concolle-form__note">※半角数字でご入力ください。ハイフン(-)は不要です。</p>
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="url" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span> URL
-          </label>
-          <input type="url" id="url" name="url" placeholder="例）https://arubai.com" class="concolle-form__input" />
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
+        <% }) %>
         <div class="concolle-form__group">
           <label for="message" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span>
+            <span class="concolle-form__label-required">必須</span>
             ご相談内容
           </label>
           <textarea
@@ -86,120 +54,9 @@
             rows="5"
             placeholder="ご質問やご相談内容を入力してください"
             class="concolle-form__input"
+            required
           ></textarea>
           <p class="concolle-form__note">※お問い合わせ種別にて「お問い合わせ」を選択された方は必ずご入力ください。</p>
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__submit">
-          <button type="submit" class="concolle-form__button">
-            <p class="concolle-form__button-text">この内容で送信する</p>
-            <span><img src="./images/arrow-right.svg" alt="" /></span>
-          </button>
-        </div>
-      </form>
-
-      <form id="inquiry-form" class="concolle-form__form" style="display: none">
-        <div class="concolle-form__group">
-          <label for="company" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            店名・社名
-          </label>
-          <input
-            type="text"
-            id="company"
-            name="company"
-            placeholder="例）株式会社あるバイ"
-            class="concolle-form__input"
-            required
-          />
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="person" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span>
-            担当者名
-          </label>
-          <input type="text" id="person" name="person" placeholder="例）山田　花子" class="concolle-form__input" />
-          <p class="concolle-form__note">※姓と名の間に全角スペースを入れてください。</p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="kana" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span>
-            担当者名（フリガナ）
-          </label>
-          <input type="text" id="kana" name="kana" placeholder="例）ヤマダ　ハナコ" class="concolle-form__input" />
-          <p class="concolle-form__note">※姓と名の間に全角スペースを入れ、全角カナでご入力ください。</p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="email" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            メールアドレス
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="例）info@arubai.com"
-            class="concolle-form__input"
-            required
-          />
-          <p class="concolle-form__error-message" style="display: none"></p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="phone" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            電話番号
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="例）0123456789"
-            class="concolle-form__input"
-            required
-          />
-          <p class="concolle-form__note">※半角数字でご入力ください。ハイフン(-)は不要です。</p>
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="address" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span> ご住所
-          </label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            placeholder="例）東京都渋谷区〇〇"
-            class="concolle-form__input"
-            required
-          />
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="url" class="concolle-form__label">
-            <span class="concolle-form__label-optional">任意</span> URL
-          </label>
-          <input type="url" id="url" name="url" placeholder="例）https://arubai.com" class="concolle-form__input" />
-        </div>
-
-        <div class="concolle-form__group">
-          <label for="message" class="concolle-form__label">
-            <span class="concolle-form__label-required">必須</span>
-            ご相談内容
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="ご質問やご相談内容を入力してください"
-            class="concolle-form__input"
-            required
-          ></textarea>
         </div>
 
         <div class="concolle-form__submit">
