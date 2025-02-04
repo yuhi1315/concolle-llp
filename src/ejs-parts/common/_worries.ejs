@@ -1,0 +1,54 @@
+<%
+<!-- prettier-ignore -->
+let text1 = `ネットから<br />
+集客したいけど、<br />
+<span
+  >ホームページを<br />
+  作るのは大変</span
+>`
+<!-- prettier-ignore -->
+
+const items = [
+ { text: text1}, // 1 
+ { text: text1}, // 1 
+ { text: text1}, // 1 
+ { text: text1}, // 1 
+ { text: text1}, // 1 
+ ]; 
+ %>
+
+<div class="worries">
+  <div class="worries__inner inner">
+    <ul class="worries__content">
+      <div class="worries__person">
+        <img src="../assets/images/common/icon-person.png" alt="人のアイコン" />
+      </div>
+      <% items.forEach(function(item) { %>
+      <li class="worries__item">
+        <div class="worries__item-wrapper">
+          <div class="worries__item-tornado">
+            <img src="../assets/images/common/icon-tornado.svg" alt="渦巻きのアイコン" />
+          </div>
+          <p class="worries__text">
+            ネットから<br />
+            集客したいけど、<br />
+            <span
+              >ホームページを<br />
+              作るのは大変</span
+            >
+          </p>
+          <div class="worries__item-bubble">
+            <img src="../assets/images/common/icon-bubble.svg" alt="泡のアイコン" />
+          </div>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+    <div class="worries__message">
+      <img
+        src="../assets/images/common/text-worry.png"
+        alt="こんなお悩みがあっても、コンコレに掲載すればぜんぶ解決！"
+      />
+    </div>
+  </div>
+</div>

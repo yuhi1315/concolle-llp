@@ -568,6 +568,15 @@ button:hover {
 	width: 100%;
 }
 
+.concolle__worries {
+	background-color: #fffbf2;
+	background-image: url(../images/common/bg-worry.png);
+	background-position: center 29px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1114px;
+}
+
 .message {
 	background-image: url("../images/common/bg-message.svg");
 	background-position: center;
@@ -860,6 +869,185 @@ button:hover {
 .mv-title__crown img {
 	aspect-ratio: 175/152;
 	width: 100%;
+}
+
+.worries__inner {
+	padding-top: 104px;
+}
+
+.worries__content {
+	align-items: end;
+	display: flex;
+	height: 640px;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1061px;
+	position: relative;
+}
+
+.worries__person {
+	max-width: 320px;
+	width: 100%;
+}
+
+.worries__person img {
+	-o-object-fit: cover;
+	aspect-ratio: 320/256;
+	object-fit: cover;
+	width: 100%;
+}
+
+.worries__item {
+	background-image: url("../images/common/frame-cloud.svg");
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 229px;
+	position: absolute;
+	width: 247px;
+}
+
+.worries__item-wrapper {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.worries__item-tornado {
+	position: absolute;
+}
+
+.worries__text {
+	font-size: 20px;
+	font-weight: 600;
+	left: 50%;
+	letter-spacing: 0.04em;
+	line-height: 1.35;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.worries__text span {
+	color: #32aeae;
+}
+
+.worries__item-bubble {
+	position: absolute;
+}
+
+.worries__message {
+	margin: 0 auto;
+	margin-top: 112px;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.worries__top-text {
+	-webkit-text-stroke: 3px #eb537b;
+	color: white;
+	font-family: Zen Maru Gothic;
+	font-size: 32px;
+	font-weight: 800;
+	line-height: 1;
+	text-align: center;
+}
+
+.worries__item:nth-child(2) {
+	left: 4.3125rem;
+	top: 8.125rem;
+}
+
+.worries__item:nth-child(2) .worries__text {
+	top: 44%;
+}
+
+.worries__item:nth-child(2) .worries__item-bubble {
+	bottom: 1px;
+	right: 0;
+}
+
+.worries__item:nth-child(2) .worries__item-tornado {
+	right: 0;
+	top: -26px;
+}
+
+.worries__item:nth-child(3) {
+	left: 24.9375rem;
+	top: 4.4375rem;
+}
+
+.worries__item .worries__text:nth-child(3) {
+	top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(3) {
+	bottom: 1px;
+	right: 0;
+}
+
+.worries__item .worries__item-tornado:nth-child(3) {
+	right: 0;
+	top: -26px;
+}
+
+.worries__item:nth-child(4) {
+	right: 4.5625rem;
+	top: 9.875rem;
+}
+
+.worries__item .worries__text:nth-child(4) {
+	top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(4) {
+	bottom: 1px;
+	right: 0;
+}
+
+.worries__item .worries__item-tornado:nth-child(4) {
+	right: 0;
+	top: -26px;
+}
+
+.worries__item:nth-child(5) {
+	bottom: -2.0625rem;
+	left: 0rem;
+}
+
+.worries__item .worries__text:nth-child(5) {
+	top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(5) {
+	bottom: 1px;
+	right: 0;
+}
+
+.worries__item .worries__item-tornado:nth-child(5) {
+	right: 0;
+	top: -26px;
+}
+
+.worries__item:nth-child(6) {
+	bottom: -3.3125rem;
+	right: 0rem;
+}
+
+.worries__item .worries__text:nth-child(6) {
+	top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(6) {
+	bottom: 1px;
+	right: 0;
+}
+
+.worries__item .worries__item-tornado:nth-child(6) {
+	right: 0;
+	top: -26px;
 }
 
 @media screen and (max-width: 1300px) {

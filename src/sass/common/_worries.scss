@@ -1,1 +1,182 @@
 @use 'global' as *;
+
+.worries {
+}
+
+.worries__inner {
+  padding-top: 104px;
+}
+
+.worries__content {
+  position: relative;
+  max-width: 1061px;
+  margin: 0 auto;
+  height: 640px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.worries__person {
+  max-width: 320px;
+  width: 100%;
+}
+.worries__person img {
+  aspect-ratio: 320/256;
+  object-fit: cover;
+  width: 100%;
+}
+
+.worries__item {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 247px;
+  height: 229px;
+  background-image: url('../images/common/frame-cloud.svg');
+  background-size: cover;
+}
+
+.worries__item-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.worries__item-tornado {
+  position: absolute;
+}
+
+.worries__text {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.worries__text span {
+  color: #32aeae;
+}
+
+.worries__item-bubble {
+  position: absolute;
+}
+
+.worries__message {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 112px;
+}
+
+.worries__top-text {
+  color: white;
+  font-family: Zen Maru Gothic;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  -webkit-text-stroke: 3px #eb537b;
+}
+
+// 一つ目の悩みボックス
+.worries__item:nth-child(2) {
+  left: rem(69);
+  top: rem(130);
+}
+
+.worries__item:nth-child(2) .worries__text {
+  top: 44%;
+}
+
+.worries__item:nth-child(2) .worries__item-bubble {
+  right: 0;
+  bottom: 1px;
+}
+
+.worries__item:nth-child(2) .worries__item-tornado {
+  right: 0;
+  top: -26px;
+}
+
+.worries__item:nth-child(3) {
+  left: rem(399);
+  top: rem(71);
+}
+
+.worries__item .worries__text:nth-child(3) {
+  top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(3) {
+  right: 0;
+  bottom: 1px;
+}
+
+.worries__item .worries__item-tornado:nth-child(3) {
+  right: 0;
+  top: -26px;
+}
+
+.worries__item:nth-child(4) {
+  right: rem(73);
+  top: rem(158);
+}
+
+.worries__item .worries__text:nth-child(4) {
+  top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(4) {
+  right: 0;
+  bottom: 1px;
+}
+
+.worries__item .worries__item-tornado:nth-child(4) {
+  right: 0;
+  top: -26px;
+}
+
+.worries__item:nth-child(5) {
+  left: rem(0);
+  bottom: rem(-33);
+}
+
+.worries__item .worries__text:nth-child(5) {
+  top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(5) {
+  right: 0;
+  bottom: 1px;
+}
+
+.worries__item .worries__item-tornado:nth-child(5) {
+  right: 0;
+  top: -26px;
+}
+
+.worries__item:nth-child(6) {
+  right: rem(0);
+  bottom: rem(-53);
+}
+
+.worries__item .worries__text:nth-child(6) {
+  top: 44%;
+}
+
+.worries__item .worries__item-bubble:nth-child(6) {
+  right: 0;
+  bottom: 1px;
+}
+
+.worries__item .worries__item-tornado:nth-child(6) {
+  right: 0;
+  top: -26px;
+}
