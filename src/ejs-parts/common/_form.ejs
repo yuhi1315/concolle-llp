@@ -22,11 +22,32 @@ const items = [
 
     <div class="concolle-form__wrapper">
       <form id="apply-form" class="concolle-form__form">
+        <div class="concolle-form__group">
+          <label class="concolle-form__label">
+            <span class="concolle-form__label-required">必須</span>
+            <span class="concolle-form__label-text">お問い合わせ種別</span>
+          </label>
+          <div class="concolle-form__radio-group">
+            <label class="concolle-form__radio-item checked">
+              <input type="radio" name="inquiry-type" value="application" class="concolle-form__radio-input" checked />
+              <span class="concolle-form__radio-label">掲載お申し込み</span>
+            </label>
+            <label class="concolle-form__radio-item">
+              <input type="radio" name="inquiry-type" value="inquiry" class="concolle-form__radio-input" />
+              <span class="concolle-form__radio-label">お問い合わせ</span>
+            </label>
+          </div>
+        </div>
+
         <% items.forEach(item => { %>
         <div class="concolle-form__group">
           <label for="company" class="concolle-form__label">
-            <span class="concolle-form__label-required"> <%= item.isRequired ? '必須' : '任意' %> </span>
-            <%= item.label %>
+            <span
+              class="concolle-form__label-required concolle-form__label-required--<%= item.isRequired ? 'required' : 'optional' %>"
+            >
+              <%= item.isRequired ? '必須' : '任意' %>
+            </span>
+            <span class="concolle-form__label-text"><%= item.label %></span>
           </label>
           <!-- prettier-ignore -->
           <input
@@ -46,7 +67,7 @@ const items = [
         <div class="concolle-form__group">
           <label for="message" class="concolle-form__label">
             <span class="concolle-form__label-required">必須</span>
-            ご相談内容
+            <span class="concolle-form__label-text">ご相談内容</span>
           </label>
           <textarea
             id="message"
@@ -59,12 +80,7 @@ const items = [
           <p class="concolle-form__note">※お問い合わせ種別にて「お問い合わせ」を選択された方は必ずご入力ください。</p>
         </div>
 
-        <div class="concolle-form__submit">
-          <button type="submit" class="concolle-form__button">
-            <p class="concolle-form__button-text">この内容で送信する</p>
-            <span><img src="./images/arrow-right.svg" alt="" /></span>
-          </button>
-        </div>
+        <div class="concolle-form__submit"><%- include('../../ejs-parts/common/_common-btn.ejs',{type: 'form'}) %></div>
       </form>
     </div>
   </div>

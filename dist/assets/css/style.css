@@ -921,42 +921,39 @@ input::placeholder {
 }
 
 .concolle-form__label {
+	align-items: center;
+	display: flex;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 600;
+	gap: 8px;
 	letter-spacing: 0.04em;
-	line-height: 25.6px;
-	margin-bottom: 4px;
+	line-height: 1.6;
 	margin-right: 8px;
 	text-align: left;
 }
 
 .concolle-form__label-required {
-	background-color: #221a15;
+	background-color: #eb537b;
 	border-radius: 3px;
 	color: white;
+	display: inline-block;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
-	line-height: 12px;
-	padding: 4px 8px;
+	line-height: 1x;
+	padding: 1px 8px;
 }
 
-.concolle-form__label-optional {
-	background-color: #8d9999;
-	border-radius: 3px;
-	color: white;
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 0.03em;
-	line-height: 12px;
-	padding: 4px 8px;
+.concolle-form__label-required--optional {
+	background-color: #6c6c6c;
 }
 
 .concolle-form__input {
-	border: 1px solid #3e4d4c;
+	border: 1px solid #221a15;
 	border-radius: 4px;
 	font-size: 16px;
-	margin-top: 4px;
+	line-height: 1.6;
+	margin-top: 8px;
 	padding: 12px;
 }
 
@@ -971,50 +968,6 @@ input::placeholder {
 	margin-top: 24px;
 }
 
-.concolle-form__button {
-	align-items: center;
-	background-color: #00bdbd;
-	border: none;
-	border-radius: 8px;
-	border-radius: 48px;
-	color: white;
-	cursor: pointer;
-	display: flex;
-	font-size: 24px;
-	font-weight: 700;
-	justify-content: center;
-	letter-spacing: 0.05em;
-	line-height: 38.4px;
-	max-width: 434px;
-	padding: 16px 24px;
-	padding: 16px;
-	position: relative;
-	text-align: center;
-	width: 100%;
-}
-
-.concolle-form__button span {
-	max-width: 20px;
-	position: absolute;
-	right: 18px;
-	width: 100%;
-}
-
-.concolle-form__button span img {
-	aspect-ratio: 1;
-}
-
-.concolle-form__button:hover {
-	background-color: #00838f;
-}
-
-.concolle-form__error-message {
-	color: #f44336;
-	display: none; /* 初期状態では非表示 */
-	font-size: 12px;
-	margin-top: 4px;
-}
-
 .concolle-form__note {
 	color: #8d9999;
 	font-size: 12px;
@@ -1025,17 +978,52 @@ input::placeholder {
 	text-align: left;
 }
 
-.concolle-form__copy {
-	color: white;
-	font-family: Noto Sans JP;
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 0.05em;
-	line-height: 12px;
-	margin: 0 auto;
-	padding-top: 80px;
-	text-align: center;
-	width: 100%;
+.concolle-form__radio-group {
+	display: flex;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.concolle-form__radio-item {
+	align-items: center;
+	background-color: #f4f4f4;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	color: #6c6c6c;
+	cursor: pointer;
+	display: flex;
+	gap: 8px;
+	padding: 12px 8px;
+	transition: background-color 0.3s, border-color 0.3s;
+	width: 50%;
+}
+
+.concolle-form__radio-input {
+	accent-color: #0c8d8d;
+	height: 19px;
+	margin: 0;
+	width: 19px;
+}
+
+.concolle-form__radio-label {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.concolle-form__radio-item.checked {
+	background-color: #edffff;
+	border: 1px solid #0c8d8d;
+	border-radius: 5px;
+	color: #221a15;
+}
+
+/* 未選択時の状態をカスタマイズ */
+
+.concolle-form__radio-input:not(:checked) {
+	accent-color: #b0b0b0; /* グレーを緑に変更 */
 }
 
 .message {
@@ -1643,15 +1631,6 @@ input::placeholder {
 
 .sub-title__big {
 	font-size: 2rem;
-}
-
-.concolle-form__button {
-	font-size: 20px;
-	line-height: 32px;
-}
-
-.concolle-form__copy {
-	padding-top: 0;
 }
 
 .message__top {

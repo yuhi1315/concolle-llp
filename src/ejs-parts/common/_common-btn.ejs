@@ -27,6 +27,10 @@ switch (type) {
   buttonText = "お問い合わせ";
   messageText = inquiryText;
     break;
+  case 'form':
+  buttonText = "この内容で送信する";
+  messageText = "";
+    break;
   default:
     text = "";
     break;
@@ -35,9 +39,11 @@ switch (type) {
 
 <div class="common-btn common-btn--<%= type %>">
   <div class="common-btn__wrapper">
+    <% if (messageText) { %>
     <div class="common-btn__message-wrapper">
       <div class="common-btn__message"><%- messageText %></div>
     </div>
+    <% } %>
     <button class="common-btn__button">
       <span><%- buttonText %></span>
     </button>

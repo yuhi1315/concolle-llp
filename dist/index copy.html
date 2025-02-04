@@ -120,6 +120,7 @@
                           <p>ですぐに掲載！</p>
                         </div>
                       </div>
+
                       <button class="common-btn__button">
                         <span>今すぐ無料掲載する</span>
                       </button>
@@ -141,6 +142,7 @@
                           <p>してみる</p>
                         </div>
                       </div>
+
                       <button class="common-btn__button">
                         <span>お問い合わせ</span>
                       </button>
@@ -669,11 +671,49 @@
                 <div class="concolle-form__wrapper">
                   <form id="apply-form" class="concolle-form__form">
                     <div class="concolle-form__group">
+                      <label class="concolle-form__label">
+                        <span class="concolle-form__label-required">必須</span>
+                        <span class="concolle-form__label-text"
+                          >お問い合わせ種別</span
+                        >
+                      </label>
+                      <div class="concolle-form__radio-group">
+                        <label class="concolle-form__radio-item checked">
+                          <input
+                            type="radio"
+                            name="inquiry-type"
+                            value="application"
+                            class="concolle-form__radio-input"
+                            checked
+                          />
+                          <span class="concolle-form__radio-label"
+                            >掲載お申し込み</span
+                          >
+                        </label>
+                        <label class="concolle-form__radio-item">
+                          <input
+                            type="radio"
+                            name="inquiry-type"
+                            value="inquiry"
+                            class="concolle-form__radio-input"
+                          />
+                          <span class="concolle-form__radio-label"
+                            >お問い合わせ</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--required"
+                        >
                           必須
                         </span>
-                        店名・社名
+                        <span class="concolle-form__label-text"
+                          >店名・社名</span
+                        >
                       </label>
 
                       <input
@@ -693,10 +733,12 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--optional"
+                        >
                           任意
                         </span>
-                        担当者名
+                        <span class="concolle-form__label-text">担当者名</span>
                       </label>
 
                       <input
@@ -719,10 +761,14 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--optional"
+                        >
                           任意
                         </span>
-                        担当者名（フリガナ）
+                        <span class="concolle-form__label-text"
+                          >担当者名（フリガナ）</span
+                        >
                       </label>
 
                       <input
@@ -745,10 +791,14 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--required"
+                        >
                           必須
                         </span>
-                        メールアドレス
+                        <span class="concolle-form__label-text"
+                          >メールアドレス</span
+                        >
                       </label>
 
                       <input
@@ -768,10 +818,12 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--required"
+                        >
                           必須
                         </span>
-                        電話番号
+                        <span class="concolle-form__label-text">電話番号</span>
                       </label>
 
                       <input
@@ -795,10 +847,12 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--required"
+                        >
                           必須
                         </span>
-                        ご住所
+                        <span class="concolle-form__label-text">ご住所</span>
                       </label>
 
                       <input
@@ -818,10 +872,12 @@
 
                     <div class="concolle-form__group">
                       <label for="company" class="concolle-form__label">
-                        <span class="concolle-form__label-required">
+                        <span
+                          class="concolle-form__label-required concolle-form__label-required--optional"
+                        >
                           任意
                         </span>
-                        URL
+                        <span class="concolle-form__label-text">URL</span>
                       </label>
 
                       <input
@@ -841,7 +897,9 @@
                     <div class="concolle-form__group">
                       <label for="message" class="concolle-form__label">
                         <span class="concolle-form__label-required">必須</span>
-                        ご相談内容
+                        <span class="concolle-form__label-text"
+                          >ご相談内容</span
+                        >
                       </label>
                       <textarea
                         id="message"
@@ -857,14 +915,13 @@
                     </div>
 
                     <div class="concolle-form__submit">
-                      <button type="submit" class="concolle-form__button">
-                        <p class="concolle-form__button-text">
-                          この内容で送信する
-                        </p>
-                        <span
-                          ><img src="./images/arrow-right.svg" alt=""
-                        /></span>
-                      </button>
+                      <div class="common-btn common-btn--form">
+                        <div class="common-btn__wrapper">
+                          <button class="common-btn__button">
+                            <span>この内容で送信する</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
