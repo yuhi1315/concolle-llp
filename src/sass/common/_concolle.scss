@@ -58,6 +58,10 @@
   background-size: cover;
   background-position: center;
   height: rem(1114);
+  @include mq('md') {
+    background-image: url(../images/common/bg-worry-sp.png);
+    height: rem(661);
+  }
 }
 
 .concolle__charm {

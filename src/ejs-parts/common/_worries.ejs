@@ -13,7 +13,7 @@ let text3 = `<span>お店の知名度</span>を<br />もっと高めたい`
 <!-- prettier-ignore -->
 let text4 = `他のサイトは<br /><span>掲載費用が高い</span>`
 <!-- prettier-ignore -->
-let text5 = `SNSだけだと<br /><span>集客効果が足りない</span>`
+let text5 = `SNSだけだと<br /><span>集客効果が<br class="md-show" />足りない</span>`
 <!-- prettier-ignore -->
 
 const items = [
@@ -40,10 +40,13 @@ const items = [
       <% }); %>
     </ul>
     <div class="worries__message">
-      <img
-        src="../assets/images/common/text-worry.png"
-        alt="こんなお悩みがあっても、コンコレに掲載すればぜんぶ解決！"
-      />
+      <picture>
+        <source media="(min-width: 768px)" srcset="../assets/images/common/text-worry.png" />
+        <img
+          src="../assets/images/common/text-worry-sp.png"
+          alt="こんなお悩みがあっても、コンコレに掲載すればぜんぶ解決！"
+        />
+      </picture>
     </div>
   </div>
 </div>

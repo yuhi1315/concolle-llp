@@ -2,6 +2,9 @@
 
 .worries__inner {
   padding-top: rem(66);
+  @include mq('md') {
+    max-width: 400px;
+  }
 }
 
 .worries__content {
@@ -12,6 +15,9 @@
   display: flex;
   align-items: end;
   justify-content: center;
+  @include mq('md') {
+    height: rem(413);
+  }
 }
 
 .worries__person {
@@ -37,7 +43,8 @@
   width: rem(247);
   height: rem(229);
   background-image: url('../images/common/frame-cloud.svg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .worries__item-wrapper {
@@ -79,6 +86,9 @@
   width: 100%;
   margin: 0 auto;
   margin-top: rem(117);
+  @include mq('md') {
+    margin-top: rem(32);
+  }
 }
 
 .worries__top-text {
@@ -105,11 +115,16 @@
     background-image: url('../images/common/frame-cloud-sp-1.png');
     width: rem(168);
     height: rem(124);
+    left: 12px;
+    top: 15px;
   }
 }
 
 .worries__item:nth-child(2) .worries__text {
   top: 50%;
+  @include mq('md') {
+    top: 43%;
+  }
 }
 
 // 2つ目の悩みボックス
@@ -124,11 +139,17 @@
     background-image: url('../images/common/frame-cloud-sp-2.png');
     width: rem(171);
     height: rem(106);
+    left: unset;
+    right: 33px;
+    top: -24px;
   }
 }
 
 .worries__item:nth-child(3) .worries__text {
   top: 49%;
+  @include mq('md') {
+    top: 37%;
+  }
 }
 
 .worries__item:nth-child(3) .worries__item-tornado {
@@ -146,11 +167,16 @@
     background-image: url('../images/common/frame-cloud-sp-3.png');
     width: rem(160.61);
     height: rem(95.75);
+    right: 16px;
+    top: 66px;
   }
 }
 
 .worries__item:nth-child(4) .worries__text {
   top: 50%;
+  @include mq('md') {
+    top: 38%;
+  }
 }
 
 .worries__item:nth-child(5) {
@@ -163,16 +189,24 @@
     background-image: url('../images/common/frame-cloud-sp-4.png');
     width: rem(161);
     height: rem(108);
+    top: 128px;
+    left: 15px;
   }
 }
 
 .worries__item:nth-child(5) .worries__text {
   top: 58%;
   left: 43%;
+  @include mq('md') {
+    top: 34%;
+    left: 53%;
+  }
 }
 
 .worries__item:nth-child(6) {
   right: rem(0);
+  left: unset;
+  top: unset;
   bottom: rem(-33);
   background-image: url('../images/common/frame-cloud-5.svg');
   width: rem(293);
@@ -181,10 +215,16 @@
     background-image: url('../images/common/frame-cloud-sp-5.png');
     width: rem(140);
     height: rem(117);
+    right: 38px;
+    top: 152px;
   }
 }
 
 .worries__item:nth-child(6) .worries__text {
   top: 58%;
   left: 57%;
+  @include mq('md') {
+    top: 41%;
+    left: 50%;
+  }
 }

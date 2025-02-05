@@ -1576,7 +1576,8 @@ input::placeholder {
 
 .worries__item {
 	background-image: url("../images/common/frame-cloud.svg");
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
 	content: "";
 	display: block;
 	height: 14.3125rem;
@@ -1690,7 +1691,11 @@ input::placeholder {
 	background-image: url("../images/common/frame-cloud-5.svg");
 	bottom: -2.0625rem;
 	height: 15.4375rem;
+	left: auto;
+	left: initial;
 	right: 0rem;
+	top: auto;
+	top: initial;
 	width: 18.3125rem;
 }
 
@@ -2130,6 +2135,11 @@ input::placeholder {
 	padding: 0 1.1875rem;
 }
 
+.concolle__worries {
+	background-image: url(../images/common/bg-worry-sp.png);
+	height: 41.3125rem;
+}
+
 .faq__wrapper {
 	padding: 2.5rem 0.46875rem;
 }
@@ -2294,7 +2304,8 @@ input::placeholder {
 }
 
 .message__bottom {
-	left: 0;
+	left: -4px;
+	margin-top: 19px;
 	width: auto;
 }
 
@@ -2323,11 +2334,19 @@ input::placeholder {
 }
 
 .message__arrow-icon {
-	display: none;
+	height: 84.34px;
+	right: -0.875rem;
+	top: -1.25rem;
+	width: 73.78px;
+}
+
+.message__arrow-icon img {
+	aspect-ratio: 73.78/84.34;
 }
 
 .mission__inner {
 	max-width: 600px;
+	padding-bottom: 40px;
 	padding-left: 0.46875rem;
 	padding-right: 0.46875rem;
 }
@@ -2412,6 +2431,14 @@ input::placeholder {
 	aspect-ratio: 116/100;
 }
 
+.worries__inner {
+	max-width: 400px;
+}
+
+.worries__content {
+	height: 25.8125rem;
+}
+
 .worries__person {
 	max-width: 188px;
 }
@@ -2424,6 +2451,10 @@ input::placeholder {
 	font-size: 0.8125rem;
 }
 
+.worries__message {
+	margin-top: 2rem;
+}
+
 .worries__top-text {
 	font-size: 1.5rem;
 }
@@ -2431,31 +2462,65 @@ input::placeholder {
 .worries__item:nth-child(2) {
 	background-image: url("../images/common/frame-cloud-sp-1.png");
 	height: 7.75rem;
+	left: 12px;
+	top: 15px;
 	width: 10.5rem;
+}
+
+.worries__item:nth-child(2) .worries__text {
+	top: 43%;
 }
 
 .worries__item:nth-child(3) {
 	background-image: url("../images/common/frame-cloud-sp-2.png");
 	height: 6.625rem;
+	left: auto;
+	left: initial;
+	right: 33px;
+	top: -24px;
 	width: 10.6875rem;
+}
+
+.worries__item:nth-child(3) .worries__text {
+	top: 37%;
 }
 
 .worries__item:nth-child(4) {
 	background-image: url("../images/common/frame-cloud-sp-3.png");
 	height: 5.984375rem;
+	right: 16px;
+	top: 66px;
 	width: 10.038125rem;
+}
+
+.worries__item:nth-child(4) .worries__text {
+	top: 38%;
 }
 
 .worries__item:nth-child(5) {
 	background-image: url("../images/common/frame-cloud-sp-4.png");
 	height: 6.75rem;
+	left: 15px;
+	top: 128px;
 	width: 10.0625rem;
+}
+
+.worries__item:nth-child(5) .worries__text {
+	left: 53%;
+	top: 34%;
 }
 
 .worries__item:nth-child(6) {
 	background-image: url("../images/common/frame-cloud-sp-5.png");
 	height: 7.3125rem;
+	right: 38px;
+	top: 152px;
 	width: 8.75rem;
+}
+
+.worries__item:nth-child(6) .worries__text {
+	left: 50%;
+	top: 41%;
 }
 
 }
