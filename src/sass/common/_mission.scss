@@ -127,13 +127,11 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: rem(348);
   border: rem(1) solid $black;
   border-radius: rem(16);
   position: relative;
-  @include mq('md') {
+  @include mq('lg') {
     background-image: url('../images/common/bg-box-sp.svg');
-    height: rem(325);
   }
 }
 
@@ -143,11 +141,16 @@
   justify-content: center;
   padding: rem(72) rem(32) rem(56);
   position: relative;
-  @include mq('md') {
+  @include mq('lg') {
     row-gap: 0;
     column-gap: rem(21.5);
     flex-wrap: wrap;
-    padding: rem(32) rem(30) rem(24);
+    padding: rem(46) rem(30) rem(24);
+  }
+  @include mq('sm') {
+    padding: rem(32) rem(30) rem(12);
+    max-width: 370px;
+    margin: 0 auto;
   }
 }
 
@@ -158,7 +161,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: rem(-45);
-  @include mq('md') {
+  @include mq('lg') {
     top: rem(-20);
     max-width: rem(130);
   }
@@ -168,7 +171,7 @@
   aspect-ratio: 254 / 97;
   width: 100%;
   object-fit: contain;
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 130 / 48;
   }
 }
@@ -180,7 +183,7 @@
   max-width: 280px;
   width: 100%;
   height: rem(220);
-  @include mq('md') {
+  @include mq('lg') {
     height: rem(140);
     max-width: 137px;
   }
@@ -194,7 +197,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 100px;
   }
 }
@@ -216,21 +219,21 @@
   letter-spacing: 0.04em;
   text-align: center;
   white-space: nowrap;
-  @include mq('md') {
+  @include mq('lg') {
     font-size: rem(16);
   }
 }
 
 .mission__box-text--large {
   font-size: 24px;
-  @include mq('md') {
+  @include mq('lg') {
     font-size: 20px;
   }
 }
 
 .mission__box-text--bold {
   font-size: 32px;
-  @include mq('md') {
+  @include mq('lg') {
     font-size: 20px;
     font-weight: 600;
   }
@@ -240,14 +243,14 @@
   display: flex;
   align-items: end;
   gap: rem(2);
-  @include mq('md') {
+  @include mq('lg') {
     flex-direction: column;
     align-items: center;
   }
 }
 
 .mission__box-item:nth-child(1) {
-  @include mq('md') {
+  @include mq('lg') {
     order: 2;
     max-width: 137px;
     top: -12px;
@@ -255,13 +258,13 @@
   }
 }
 .mission__box-item:nth-child(1) .mission__box-item-icon {
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 137px;
   }
 }
 
 .mission__box-item:nth-child(1) .mission__box-item-icon img {
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 137 / 140;
   }
 }
@@ -269,14 +272,14 @@
 .mission__box-item:nth-child(1) .mission__box-text-bold {
   max-width: 204px;
   width: 100%;
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 122px;
   }
 }
 .mission__box-item:nth-child(1) .mission__box-text-bold img {
   aspect-ratio: 204 / 48;
   width: 100%;
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 122 / 30;
   }
 }
@@ -285,7 +288,7 @@
   position: relative;
   top: 8px;
   left: 2px;
-  @include mq('md') {
+  @include mq('lg') {
     top: 2px;
     left: -2px;
   }
@@ -295,27 +298,33 @@
   max-width: 280px;
   width: 100%;
   top: rem(-5);
-  @include mq('md') {
+  @include mq('lg') {
     top: 2px;
   }
 }
 
 .mission__box-item:nth-child(2) {
   max-width: 320px;
-  @include mq('md') {
+  @include mq('lg') {
+    top: -12px;
+    order: 1;
+    max-width: 166px;
+  }
+  @include mq('sm') {
+    top: 0;
     order: 1;
     max-width: 166px;
   }
 }
 
 .mission__box-item:nth-child(2) .mission__box-item-icon {
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 133px;
   }
 }
 
 .mission__box-item:nth-child(2) .mission__box-item-icon img {
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 137 / 140;
   }
 }
@@ -324,20 +333,20 @@
   position: relative;
   top: 4px;
   left: 2px;
-  @include mq('md') {
+  @include mq('lg') {
     top: 1px;
     left: -5px;
   }
 }
 
 .mission__box-item:nth-child(2) .mission__box-text-bold {
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 144px;
     width: 100%;
   }
 }
 .mission__box-item:nth-child(2) .mission__box-text-bold img {
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 144 / 30;
     width: 100%;
   }
@@ -345,7 +354,7 @@
 
 .mission__box-item:nth-child(3) {
   max-width: 226px;
-  @include mq('md') {
+  @include mq('lg') {
     top: -12px;
     left: -7px;
     order: 3;
@@ -354,38 +363,38 @@
 }
 
 .mission__box-item:nth-child(3) .mission__box-text {
-  @include mq('md') {
+  @include mq('lg') {
     font-size: 16px;
   }
 }
 
 .mission__box-item:nth-child(3) .mission__box-item-icon {
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 136px;
   }
 }
 
 .mission__box-item:nth-child(3) .mission__box-item-icon img {
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 136 / 140;
   }
 }
 
 .mission__box-item:nth-child(3) .mission__box-text-bold {
-  @include mq('md') {
+  @include mq('lg') {
     max-width: 120px;
     width: 100%;
   }
 }
 .mission__box-item:nth-child(3) .mission__box-text-bold img {
-  @include mq('md') {
+  @include mq('lg') {
     aspect-ratio: 120 / 30;
     width: 100%;
   }
 }
 
 .mission__box-item:nth-child(3) .mission__box-text-gradation {
-  @include mq('md') {
+  @include mq('lg') {
     flex-direction: row;
   }
 }
