@@ -1082,6 +1082,7 @@ input::placeholder {
 	border: 0.0625rem solid #221a15;
 	border-radius: 0.25rem;
 	font-size: 1rem;
+	letter-spacing: 0.04em;
 	line-height: 1.6;
 	margin-top: 0.5rem;
 	padding: 0.6875rem 0.75rem;
@@ -2057,6 +2058,40 @@ input::placeholder {
 
 .flow__step-item:nth-child(4) .flow__step-right {
 	padding-top: 4;
+}
+
+.concolle-form__inner {
+	padding: 2.5rem 0.46875rem 2.5rem;
+}
+
+.concolle-form__form {
+	margin-top: 24px;
+}
+
+.concolle-form__message {
+	font-size: 0.875rem;
+	margin-top: 1.5rem;
+}
+
+.concolle-form__submit {
+	margin-top: 1.5rem;
+}
+
+.concolle-form__note {
+	letter-spacing: 0.04em;
+}
+
+.concolle-form__radio-group {
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.concolle-form__radio-item {
+	width: 100%;
+}
+
+.concolle-form__group--name-kana .concolle-form__note {
+	letter-spacing: 0;
 }
 
 .message__inner {

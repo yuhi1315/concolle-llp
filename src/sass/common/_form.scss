@@ -6,6 +6,9 @@ input::placeholder {
 
 .concolle-form__inner {
   padding: rem(64) 0 rem(104);
+  @include mq('md') {
+    padding: rem(40) rem(7.5) rem(40);
+  }
 }
 
 .concolle-form__wrapper {
@@ -18,6 +21,9 @@ input::placeholder {
   margin-top: 48px;
   display: flex;
   flex-direction: column;
+  @include mq('md') {
+    margin-top: 24px;
+  }
 }
 
 .concolle-form__title {
@@ -39,6 +45,10 @@ input::placeholder {
   line-height: 1.8;
   letter-spacing: 0.04em;
   text-align: left;
+  @include mq('md') {
+    margin-top: rem(24);
+    font-size: rem(14);
+  }
 }
 
 .concolle-form__group:not(:first-child) {
@@ -83,6 +93,7 @@ input::placeholder {
   font-size: rem(16);
   line-height: 1.6;
   margin-top: rem(8);
+  letter-spacing: 0.04em;
 }
 
 .concolle-form__input:focus {
@@ -94,6 +105,9 @@ input::placeholder {
   display: flex;
   justify-content: center;
   margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }
 
 .concolle-form__note {
@@ -104,12 +118,19 @@ input::placeholder {
   text-align: left;
   color: #6c6c6c;
   margin-top: rem(8);
+  @include mq('md') {
+    letter-spacing: 0.04em;
+  }
 }
 
 .concolle-form__radio-group {
   margin-top: rem(8);
   display: flex;
   gap: rem(16);
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(8);
+  }
 }
 
 .concolle-form__radio-item {
@@ -124,6 +145,9 @@ input::placeholder {
   border-radius: rem(5);
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
+  @include mq('md') {
+    width: 100%;
+  }
 }
 
 .concolle-form__radio-input {
@@ -155,4 +179,10 @@ input::placeholder {
 
 .concolle-form__input--textarea {
   padding: 15px 12px;
+}
+
+.concolle-form__group--name-kana .concolle-form__note {
+  @include mq('md') {
+    letter-spacing: 0;
+  }
 }

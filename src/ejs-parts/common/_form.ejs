@@ -40,7 +40,7 @@ const items = [
         </div>
 
         <% items.forEach(item => { %>
-        <div class="concolle-form__group">
+        <div class="concolle-form__group concolle-form__group--<%= item.id %>">
           <label for="company" class="concolle-form__label">
             <span
               class="concolle-form__label-required concolle-form__label-required--<%= item.isRequired ? 'required' : 'optional' %>"
