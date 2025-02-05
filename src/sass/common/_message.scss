@@ -9,6 +9,9 @@
 
 .message__inner {
   padding: rem(104) 0;
+  @include mq('md') {
+    padding: rem(72) 0;
+  }
 }
 
 .message__top {

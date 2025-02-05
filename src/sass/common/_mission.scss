@@ -18,6 +18,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include mq('md') {
+    max-width: 600px;
+    padding-right: rem(7.5);
+    padding-left: rem(7.5);
+  }
 }
 
 .mission__title {
@@ -28,6 +33,9 @@
 
 .mission__title-bottom {
   margin-top: rem(17);
+  @include mq('md') {
+    margin-top: rem(11);
+  }
 }
 
 .mission__english {
@@ -55,6 +63,10 @@
   line-height: 1.6;
   letter-spacing: 0.05em;
   text-align: center;
+  border-bottom: 1px solid #eb537b;
+  @include mq('md') {
+    font-size: rem(16);
+  }
 }
 
 .mission__heading {
@@ -65,6 +77,10 @@
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
+  @include mq('md') {
+    font-size: rem(22);
+    margin-top: rem(20);
+  }
 }
 
 .mission__heading-white {
@@ -72,13 +88,17 @@
   font-family: 'Zen Maru Gothic';
   font-size: rem(64);
   font-weight: 800 !important;
-  line-height: rem(64);
+  line-height: 1;
   letter-spacing: 0.05em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-shadow: rem(3) rem(3) rem(0) #eb537b;
-  -webkit-text-stroke: rem(3) #eb537b;
+  -webkit-text-stroke: rem(1.5) #eb537b;
+  @include mq('md') {
+    font-size: rem(32);
+    text-shadow: rem(2) rem(2) rem(0) #eb537b;
+  }
 }
 
 .mission__title-gradation {
@@ -96,6 +116,12 @@
   -webkit-text-stroke: rem(2) #ff408c;
 }
 
+.mission__title-gradation img {
+  @include mq('md') {
+    width: rem(332);
+  }
+}
+
 .mission__box {
   margin-top: rem(104);
   background-image: url('../images/common/bg-box.png');
@@ -107,6 +133,9 @@
   border: rem(1) solid $black;
   border-radius: rem(16);
   position: relative;
+  @include mq('md') {
+    background-image: url('../images/common/bg-box-sp.svg');
+  }
 }
 
 .mission__box-list {
@@ -115,6 +144,9 @@
   justify-content: center;
   padding: rem(72) rem(32) rem(56);
   position: relative;
+  @include mq('md') {
+    padding: rem(32) rem(30) rem(24);
+  }
 }
 
 .mission__box-icon {
@@ -124,18 +156,20 @@
   left: 50%;
   transform: translateX(-50%);
   top: rem(-121);
+  @include mq('md') {
+    max-width: rem(130);
+  }
 }
 
 .mission__box-icon img {
   aspect-ratio: 254 / 97;
   width: 100%;
   object-fit: contain;
+  @include mq('md') {
+    aspect-ratio: 130 / 48;
+  }
 }
 
-.mission__box-icon img {
-  aspect-ratio: 100 / 100;
-  width: 100%;
-}
 .mission__box-item {
   position: relative;
   display: flex;
@@ -143,12 +177,22 @@
   max-width: 280px;
   width: 100%;
   height: rem(220);
+  @include mq('md') {
+    height: rem(140);
+    max-width: 137px;
+  }
 }
 .mission__box-item:nth-child(3) {
   max-width: 320px;
+  @include mq('md') {
+    max-width: 166px;
+  }
 }
 .mission__box-item:nth-child(4) {
   max-width: 226px;
+  @include mq('md') {
+    max-width: 136px;
+  }
 }
 
 .mission__box-item-icon {
@@ -183,6 +227,9 @@
   line-height: 1.6;
   letter-spacing: 0.04em;
   text-align: center;
+  @include mq('md') {
+    font-size: rem(16);
+  }
 }
 
 .mission__box-text-bold {
@@ -197,4 +244,8 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block; /* インライン要素の場合は必要 */
+  @include mq('md') {
+    font-size: rem(24);
+    -webkit-text-stroke: rem(1) #eb537b;
+  }
 }

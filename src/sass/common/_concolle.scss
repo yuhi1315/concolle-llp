@@ -40,6 +40,12 @@
   display: flex;
   justify-content: center;
   gap: rem(32);
+  @include mq('md') {
+    flex-direction: column;
+    margin-top: rem(19);
+    gap: rem(24);
+    padding: 0 rem(19);
+  }
 }
 
 .concolle__mv-button {
