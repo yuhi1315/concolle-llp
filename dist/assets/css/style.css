@@ -680,7 +680,7 @@ button:hover {
 	display: flex;
 	gap: 2rem;
 	justify-content: center;
-	margin-top: 2.375rem;
+	margin-top: 2.3125rem;
 }
 
 .concolle__mv-button {
@@ -825,11 +825,55 @@ button:hover {
 	width: 100%;
 }
 
+.flow__title-text-wrapper {
+	position: relative;
+}
+
+.flow__title-text {
+	-webkit-text-decoration-skip-ink: none;
+	color: white;
+	font-family: Zen Maru Gothic;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 89.6px;
+	margin: 0 auto;
+	max-width: 480px;
+	text-align: center;
+	text-decoration-skip-ink: none;
+	text-shadow: -0.0625rem -0.0625rem 0 #eb537b, 0.0625rem -0.0625rem 0 #eb537b, -0.0625rem 0.0625rem 0 #eb537b, 0.0625rem 0.0625rem 0 #eb537b; /* 縁取り */
+	text-underline-position: from-font;
+	width: 100%;
+}
+
+.flow__title-shadow {
+	color: white;
+	margin: 0 auto;
+	max-width: 480px;
+	width: 100%;
+}
+
 .flow__step {
 	background-color: white;
 	border-radius: 16px;
-	margin-top: 104px;
+	margin-top: 254px;
 	padding: 80px;
+	position: relative;
+}
+
+.flow__step-icon {
+	left: 50%;
+	max-width: 170px;
+	position: absolute;
+	top: -121px;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.flow__step-icon img {
+	-o-object-fit: contain;
+	aspect-ratio: 170/128;
+	object-fit: contain;
+	width: 100%;
 }
 
 .flow__step-item {
@@ -1110,14 +1154,20 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
 	padding-bottom: 96px;
-	padding-top: 106px;
+	padding-top: 119px;
 }
 
 .mission__title {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+}
+
+.mission__title-bottom {
+	margin-top: 17px;
 }
 
 .mission__english {
@@ -1151,7 +1201,7 @@ input::placeholder {
 	font-size: 44px;
 	font-weight: 700;
 	line-height: 1.6;
-	margin-top: 32px;
+	margin-top: 44px;
 	text-align: center;
 }
 
@@ -1203,6 +1253,28 @@ input::placeholder {
 	gap: 48px;
 	justify-content: center;
 	padding: 72px 32px 56px;
+	position: relative;
+}
+
+.mission__box-icon {
+	left: 50%;
+	max-width: 254px;
+	position: absolute;
+	top: -121px;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.mission__box-icon img {
+	-o-object-fit: contain;
+	aspect-ratio: 254/97;
+	object-fit: contain;
+	width: 100%;
+}
+
+.mission__box-icon img {
+	aspect-ratio: 100/100;
+	width: 100%;
 }
 
 .mission__box-item {
@@ -1214,18 +1286,22 @@ input::placeholder {
 	width: 100%;
 }
 
-.mission__box-item:nth-child(2) {
+.mission__box-item:nth-child(3) {
 	max-width: 320px;
 }
 
-.mission__box-item:nth-child(3) {
+.mission__box-item:nth-child(4) {
 	max-width: 226px;
 }
 
 .mission__box-item-icon {
+	bottom: 0;
+	left: 50%;
 	max-width: 202px;
-	position: relative;
+	position: absolute;
+	transform: translateX(-50%);
 	width: 100%;
+	z-index: 1;
 }
 
 .mission__box-item-icon img {
@@ -1234,6 +1310,15 @@ input::placeholder {
 }
 
 .mission__box-item-wrapper {
+	position: relative;
+	width: -moz-fit-content;
+	width: fit-content;
+	z-index: 2;
+}
+
+.mission__box-item:nth-child(2) .mission__box-item-wrapper {
+	max-width: 280px;
+	top: -5px;
 	width: 100%;
 }
 
@@ -1248,7 +1333,7 @@ input::placeholder {
 .mission__box-text-bold {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 3px #eb537b;
+	-webkit-text-stroke: 2.5px #eb537b;
 	background: linear-gradient(93.23deg, #fff9ec 0%, #ffe9b8 50.7%, #fff9ea 100%);
 	background-clip: text;
 	display: inline-block; /* インライン要素の場合は必要 */
@@ -1263,6 +1348,33 @@ input::placeholder {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+
+.mv-title__icon-mac {
+	bottom: 0;
+	left: 0;
+	max-width: 248px;
+	position: absolute;
+	width: 100%;
+}
+
+.mv-title__icon-mac img {
+	aspect-ratio: 248/218.95;
+	width: 100%;
+}
+
+.mv-title__icon-phone {
+	bottom: 0;
+	max-width: 210px;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
+.mv-title__icon-phone img {
+	aspect-ratio: 210/220;
+	width: 100%;
 }
 
 .mv-title__heading {
@@ -1307,7 +1419,7 @@ input::placeholder {
 	align-items: center;
 	display: flex;
 	gap: 2.5rem;
-	margin-top: 1.125rem;
+	margin-top: 0.875rem;
 }
 
 .mv-title__crown {

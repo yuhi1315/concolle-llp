@@ -4,6 +4,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.mv-title__icon-mac {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 248px;
+  width: 100%;
+}
+.mv-title__icon-mac img {
+  aspect-ratio: 248 / 218.95;
+  width: 100%;
+}
+
+.mv-title__icon-phone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 210px;
+  width: 100%;
+}
+.mv-title__icon-phone img {
+  aspect-ratio: 210 / 220;
+  width: 100%;
 }
 
 .mv-title__heading {
@@ -42,7 +67,7 @@
 }
 
 .mv-title__crowns {
-  margin-top: rem(18);
+  margin-top: rem(14);
   display: flex;
   align-items: center;
   gap: rem(40);

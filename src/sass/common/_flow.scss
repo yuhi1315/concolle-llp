@@ -29,11 +29,53 @@
   object-fit: cover;
 }
 
+.flow__title-text-wrapper {
+  position: relative;
+}
+
+.flow__title-text {
+  color: white;
+  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
+  font-family: Zen Maru Gothic;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 89.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-shadow: rem(-1) rem(-1) 0 #eb537b, rem(1) rem(-1) 0 #eb537b, rem(-1) rem(1) 0 #eb537b, rem(1) rem(1) 0 #eb537b; /* 縁取り */
+}
+
+.flow__title-shadow {
+  color: white;
+  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
+}
+
 .flow__step {
-  margin-top: 104px;
+  margin-top: 254px;
   padding: 80px;
   background-color: white;
   border-radius: 16px;
+  position: relative;
+}
+
+.flow__step-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -121px;
+  max-width: 170px;
+  width: 100%;
+}
+
+.flow__step-icon img {
+  aspect-ratio: 170 / 128;
+  width: 100%;
+  object-fit: contain;
 }
 
 .flow__step-item {
