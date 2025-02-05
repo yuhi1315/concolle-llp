@@ -216,6 +216,7 @@ dd {
 /* Set core root defaults */
 
 html {
+	font-family: "Noto Sans JP", "Robot", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -650,12 +651,12 @@ button:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
-	height: 2rem;
+	height: 2.75rem;
 	position: absolute;
 	right: 0.875rem;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 2rem;
+	width: 2.75rem;
 }
 
 .common-btn__button span {
@@ -665,6 +666,11 @@ button:hover {
 .common-btn--inquiry .common-btn__button {
 	background: #f7afc2;
 	background-image: linear-gradient(183.86deg, #f7afc2 3.3%, #eb537b 96.99%);
+	padding: 1.5rem 4.65625rem 1.5rem 3.28125rem;
+}
+
+.common-btn--inquiry .common-btn__button::after {
+	background-image: url("../images/common/icon-arrow-pink.svg");
 }
 
 .common-btn__message text {
@@ -1246,8 +1252,10 @@ input::placeholder {
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1260px;
 	padding-bottom: 6rem;
+	padding-left: 1.875rem;
+	padding-right: 1.875rem;
 	padding-top: 7.4375rem;
 }
 
@@ -1299,7 +1307,7 @@ input::placeholder {
 
 .mission__heading-white {
 	-webkit-text-decoration-skip-ink: none;
-	-webkit-text-stroke: 0.09375rem #eb537b;
+	-webkit-text-stroke: 0.125rem #eb537b;
 	color: #fff;
 	font-family: "Zen Maru Gothic";
 	font-size: 4rem;
@@ -1318,7 +1326,6 @@ input::placeholder {
 	-webkit-text-stroke: 0.125rem #ff408c;
 	background: linear-gradient(93.23deg, #ffd8e8 0%, #ffcaba 50%, #ffef9b 100%);
 	background-clip: text;
-	font-family: Zen Maru Gothic;
 	font-size: 4rem;
 	font-weight: 800;
 	letter-spacing: -0.05em;
@@ -1352,7 +1359,7 @@ input::placeholder {
 	left: 50%;
 	max-width: 254px;
 	position: absolute;
-	top: -7.5625rem;
+	top: -2.8125rem;
 	transform: translateX(-50%);
 	width: 100%;
 }
@@ -1371,14 +1378,6 @@ input::placeholder {
 	max-width: 280px;
 	position: relative;
 	width: 100%;
-}
-
-.mission__box-item:nth-child(3) {
-	max-width: 320px;
-}
-
-.mission__box-item:nth-child(4) {
-	max-width: 226px;
 }
 
 .mission__box-item-icon {
@@ -1403,32 +1402,63 @@ input::placeholder {
 	z-index: 2;
 }
 
-.mission__box-item:nth-child(2) .mission__box-item-wrapper {
-	max-width: 280px;
-	top: -0.3125rem;
-	width: 100%;
-}
-
 .mission__box-text {
 	font-size: 1.25rem;
 	font-weight: 600;
 	letter-spacing: 0.04em;
 	line-height: 1.6;
 	text-align: center;
+	white-space: nowrap;
 }
 
-.mission__box-text-bold {
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 0.15625rem #eb537b;
-	background: linear-gradient(93.23deg, #fff9ec 0%, #ffe9b8 50.7%, #fff9ea 100%);
-	background-clip: text;
-	display: inline-block; /* インライン要素の場合は必要 */
-	font-family: Zen Maru Gothic;
-	font-size: 2.5rem;
-	font-weight: 800;
-	line-height: 1;
-	text-align: left;
+.mission__box-text--large {
+	font-size: 24px;
+}
+
+.mission__box-text--bold {
+	font-size: 32px;
+}
+
+.mission__box-text-gradation {
+	align-items: end;
+	display: flex;
+	gap: 0.125rem;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-bold {
+	max-width: 204px;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-bold img {
+	aspect-ratio: 204/48;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-gradation {
+	left: 2px;
+	position: relative;
+	top: 8px;
+}
+
+.mission__box-item:nth-child(1) .mission__box-item-wrapper {
+	max-width: 280px;
+	top: -0.3125rem;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(2) {
+	max-width: 320px;
+}
+
+.mission__box-item:nth-child(2) .mission__box-text-gradation {
+	left: 2px;
+	position: relative;
+	top: 4px;
+}
+
+.mission__box-item:nth-child(3) {
+	max-width: 226px;
 }
 
 .mv-title {
@@ -1439,28 +1469,27 @@ input::placeholder {
 }
 
 .mv-title__icon-mac {
-	bottom: 0;
-	left: 0;
+	bottom: -118px;
+	left: 71px;
 	max-width: 248px;
 	position: absolute;
 	width: 100%;
 }
 
 .mv-title__icon-mac img {
-	aspect-ratio: 248/218.95;
+	aspect-ratio: 248/328;
 	width: 100%;
 }
 
 .mv-title__icon-phone {
-	bottom: 0;
+	bottom: -13px;
 	max-width: 210px;
 	position: absolute;
-	right: 0;
+	right: 102px;
 	width: 100%;
 }
 
 .mv-title__icon-phone img {
-	aspect-ratio: 210/220;
 	width: 100%;
 }
 
@@ -1488,7 +1517,7 @@ input::placeholder {
 }
 
 .mv-title__bottom img {
-	aspect-ratio: 981/226;
+	aspect-ratio: 981/214;
 	width: 100%;
 }
 
@@ -1506,7 +1535,7 @@ input::placeholder {
 	align-items: center;
 	display: flex;
 	gap: 2.5rem;
-	margin-top: 0.875rem;
+	margin-top: 1.3125rem;
 }
 
 .mv-title__crown {
@@ -1921,6 +1950,11 @@ input::placeholder {
 	padding: 1.0625rem 5.25rem 1.0625rem 4.25rem;
 }
 
+.common-btn__button::after {
+	height: 2rem;
+	width: 2rem;
+}
+
 .concolle__mv-inner {
 	max-width: 600px;
 	padding-left: 8.5px;
@@ -2165,14 +2199,20 @@ input::placeholder {
 
 .mission__box {
 	background-image: url("../images/common/bg-box-sp.svg");
+	height: 20.3125rem;
 }
 
 .mission__box-list {
+	-moz-column-gap: 1.34375rem;
+	column-gap: 1.34375rem;
+	flex-wrap: wrap;
 	padding: 2rem 1.875rem 1.5rem;
+	row-gap: 0;
 }
 
 .mission__box-icon {
 	max-width: 8.125rem;
+	top: -1.25rem;
 }
 
 .mission__box-icon img {
@@ -2184,21 +2224,119 @@ input::placeholder {
 	max-width: 137px;
 }
 
-.mission__box-item:nth-child(3) {
-	max-width: 166px;
-}
-
-.mission__box-item:nth-child(4) {
-	max-width: 136px;
+.mission__box-item-icon {
+	max-width: 100px;
 }
 
 .mission__box-text {
 	font-size: 1rem;
 }
 
-.mission__box-text-bold {
-	-webkit-text-stroke: 0.0625rem #eb537b;
-	font-size: 1.5rem;
+.mission__box-text--large {
+	font-size: 20px;
+}
+
+.mission__box-text--bold {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.mission__box-text-gradation {
+	align-items: center;
+	flex-direction: column;
+}
+
+.mission__box-item:nth-child(1) {
+	left: -7px;
+	max-width: 137px;
+	order: 2;
+	top: -12px;
+}
+
+.mission__box-item:nth-child(1) .mission__box-item-icon {
+	max-width: 137px;
+}
+
+.mission__box-item:nth-child(1) .mission__box-item-icon img {
+	aspect-ratio: 137/140;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-bold {
+	max-width: 122px;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-bold img {
+	aspect-ratio: 122/30;
+}
+
+.mission__box-item:nth-child(1) .mission__box-text-gradation {
+	left: -2px;
+	top: 2px;
+}
+
+.mission__box-item:nth-child(1) .mission__box-item-wrapper {
+	top: 2px;
+}
+
+.mission__box-item:nth-child(2) {
+	max-width: 166px;
+	order: 1;
+}
+
+.mission__box-item:nth-child(2) .mission__box-item-icon {
+	max-width: 133px;
+}
+
+.mission__box-item:nth-child(2) .mission__box-item-icon img {
+	aspect-ratio: 137/140;
+}
+
+.mission__box-item:nth-child(2) .mission__box-text-gradation {
+	left: -5px;
+	top: 1px;
+}
+
+.mission__box-item:nth-child(2) .mission__box-text-bold {
+	max-width: 144px;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(2) .mission__box-text-bold img {
+	aspect-ratio: 144/30;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(3) {
+	left: -7px;
+	max-width: 136px;
+	order: 3;
+	top: -12px;
+}
+
+.mission__box-item:nth-child(3) .mission__box-text {
+	font-size: 16px;
+}
+
+.mission__box-item:nth-child(3) .mission__box-item-icon {
+	max-width: 136px;
+}
+
+.mission__box-item:nth-child(3) .mission__box-item-icon img {
+	aspect-ratio: 136/140;
+}
+
+.mission__box-item:nth-child(3) .mission__box-text-bold {
+	max-width: 120px;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(3) .mission__box-text-bold img {
+	aspect-ratio: 120/30;
+	width: 100%;
+}
+
+.mission__box-item:nth-child(3) .mission__box-text-gradation {
+	flex-direction: row;
 }
 
 .mv-title__top {

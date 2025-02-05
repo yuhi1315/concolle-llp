@@ -111,14 +111,18 @@
 .common-btn__button::after {
   content: '';
   position: absolute;
-  width: rem(32);
-  height: rem(32);
+  width: rem(44);
+  height: rem(44);
   background-image: url('../images/common/icon-arrow.svg');
   background-size: contain;
   background-repeat: no-repeat;
   right: rem(14);
   top: 50%;
   transform: translateY(-50%);
+  @include mq('md') {
+    width: rem(32);
+    height: rem(32);
+  }
 }
 
 .common-btn__button span {
@@ -128,6 +132,11 @@
 .common-btn--inquiry .common-btn__button {
   background: #f7afc2;
   background-image: linear-gradient(183.86deg, #f7afc2 3.3%, #eb537b 96.99%);
+  padding: rem(24) rem(74.5) rem(24) rem(52.5);
+}
+
+.common-btn--inquiry .common-btn__button::after {
+  background-image: url('../images/common/icon-arrow-pink.svg');
 }
 
 .common-btn__message text {

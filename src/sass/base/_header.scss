@@ -1,8 +1,5 @@
 @use 'global' as *;
 
-.header {
-}
-
 .header__container {
   padding-top: rem(16);
   display: flex;
@@ -31,9 +28,6 @@
 
 .header__text span {
   margin-left: rem(8);
-}
-
-.header__logo {
 }
 
 .header__right {
