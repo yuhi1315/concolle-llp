@@ -3,7 +3,7 @@
 .charm {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 104px 0;
+  padding: rem(104) 0;
 }
 
 .charm__wrapper {
@@ -16,12 +16,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: rem(8);
 }
 
 .charm__text {
   color: white;
-  font-size: 24px;
+  font-size: rem(24);
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.04em;
@@ -39,25 +39,25 @@
 }
 
 .charm__items {
-  margin-top: 48px;
+  margin-top: rem(48);
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: rem(69);
 }
 
 .charm__item {
   position: relative;
-  border: 1px solid $black;
-  border-radius: 8px;
-  padding: 40px;
+  border: rem(1) solid $black;
+  border-radius: rem(8);
+  padding: rem(40);
   background-color: #fff4f4;
-  box-shadow: 4px 4px 0px 0px $black;
+  box-shadow: rem(4) rem(4) rem(0) rem(0) $black;
 }
 
 .charm__item-icon {
   position: absolute;
-  top: -60px;
-  left: -42px;
+  top: rem(-60);
+  left: rem(-42);
   width: 100%;
   max-width: 122px;
 }
@@ -71,7 +71,7 @@
 .charm__item-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: rem(40);
 }
 
 .charm__item-img {
@@ -90,7 +90,7 @@
 
 .charm__item-title {
   color: $primary-90;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.04em;
@@ -98,8 +98,8 @@
 }
 
 .charm__item-text {
-  margin-top: 16px;
-  font-size: 20px;
+  margin-top: rem(16);
+  font-size: rem(20);
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.04em;
@@ -112,7 +112,11 @@
   flex-direction: row-reverse;
 }
 
+.charm__item:nth-child(2) {
+  padding-right: rem(71);
+}
+
 .charm__item:nth-child(2) .charm__item-icon {
   left: auto;
-  right: -42px;
+  right: rem(-30);
 }

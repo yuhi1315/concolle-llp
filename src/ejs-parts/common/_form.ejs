@@ -14,13 +14,13 @@ const items = [
 
 <section class="concolle-form" id="concolle-form">
   <div class="concolle-form__inner">
-    <div class="concolle-form__title section-title section-title--form">
-      <h2 class="section-title__text">掲載お申し込み・お問い合わせ</h2>
-      <p class="section-title__subtitle">Contact</p>
-      <span class="section-title__bg">CONTACT</span>
-    </div>
-
+    <h2 class="concolle-form__title">
+      <img src="../assets/images/common/text-form.png" alt="掲載お申し込み・お問い合わせフォーム" />
+    </h2>
     <div class="concolle-form__wrapper">
+      <p class="concolle-form__message">
+        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      </p>
       <form id="apply-form" class="concolle-form__form">
         <div class="concolle-form__group">
           <label class="concolle-form__label">
@@ -74,12 +74,11 @@ const items = [
             name="message"
             rows="5"
             placeholder="ご質問やご相談内容を入力してください"
-            class="concolle-form__input"
+            class="concolle-form__input concolle-form__input--textarea"
             required
           ></textarea>
           <p class="concolle-form__note">※お問い合わせ種別にて「お問い合わせ」を選択された方は必ずご入力ください。</p>
         </div>
-
         <div class="concolle-form__submit"><%- include('../../ejs-parts/common/_common-btn.ejs',{type: 'form'}) %></div>
       </form>
     </div>

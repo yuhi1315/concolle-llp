@@ -15,7 +15,24 @@
 }
 
 .concolle__mv-inner {
-  padding-bottom: 16px;
+  padding-bottom: rem(16);
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  @include mq('md') {
+    max-width: 600px;
+    width: 100%;
+    padding-right: 8.5px;
+    padding-left: 8.5px;
+  }
+}
+
+.concolle__mv-title {
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }
 
 .concolle__mv-buttons {
@@ -40,8 +57,8 @@
   background-image: url(../images/common/bg-worry.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 29px;
-  height: 1114px;
+  background-position: center;
+  height: rem(1114);
 }
 
 .concolle__charm {

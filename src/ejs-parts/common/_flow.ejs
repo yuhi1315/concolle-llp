@@ -1,9 +1,12 @@
 <%
 <!-- prettier-ignore -->
 const items = [
-  { isMovie: false, isActive: false ,isBlur: false}, // 1
-  { isMovie: false, isActive: true ,isBlur: false },  // 2
-  { isMovie: false, isActive: true ,isBlur: false },  // 2
+<!-- prettier-ignore -->
+{ title: `まずはフォームから無料掲載にお申し込み`, text: `本ページ下の<a href="https://concolle.jp/contact/">フォーム</a
+>にて必要情報を入力して送信！` }, // 1
+<!-- prettier-ignore -->
+{ title: "ご登録情報の確認&スピード審査開始", text: "ご登録完了後、管理画面のログインIDと仮パスワードが発行され、すぐに審査が開始となります！" }, // 1
+  { title: "スピード審査完了&掲載開始", text: "審査がスピーディーに完了しだい、早速コンコレにて掲載スタート！掲載内容は随時更新可能です。" }, // 1
 ];
 %>
 
@@ -27,8 +30,8 @@ const items = [
           <div class="flow__step-tag">
             <img src="../assets/images/common/icon-step-tag-<%= i + 1 %>.svg" alt="お申し込み" />
           </div>
-          <p class="flow__step-title">まずはフォームから無料掲載にお申し込み</p>
-          <p class="flow__step-description">本ページ下のフォームにて必要情報を入力して送信！</p>
+          <p class="flow__step-title"><%- item.title %></p>
+          <p class="flow__step-description"><%- item.text %></p>
         </div>
       </li>
       <% }); %>

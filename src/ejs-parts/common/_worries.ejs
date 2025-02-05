@@ -7,13 +7,21 @@ let text1 = `ネットから<br />
   作るのは大変</span
 >`
 <!-- prettier-ignore -->
+let text2 = `<span>新規のお客さん</span>が<br />なかなか来ない`
+<!-- prettier-ignore -->
+let text3 = `<span>お店の知名度</span>を<br />もっと高めたい`
+<!-- prettier-ignore -->
+let text4 = `他のサイトは<br /><span>掲載費用が高い</span>`
+<!-- prettier-ignore -->
+let text5 = `SNSだけだと<br /><span>集客効果が足りない</span>`
+<!-- prettier-ignore -->
 
 const items = [
  { text: text1}, // 1 
- { text: text1}, // 1 
- { text: text1}, // 1 
- { text: text1}, // 1 
- { text: text1}, // 1 
+ { text: text2}, // 2 
+ { text: text3}, // 3 
+ { text: text4}, // 4 
+ { text: text5}, // 5 
  ]; 
  %>
 
@@ -26,20 +34,7 @@ const items = [
       <% items.forEach(function(item) { %>
       <li class="worries__item">
         <div class="worries__item-wrapper">
-          <div class="worries__item-tornado">
-            <img src="../assets/images/common/icon-tornado.svg" alt="渦巻きのアイコン" />
-          </div>
-          <p class="worries__text">
-            ネットから<br />
-            集客したいけど、<br />
-            <span
-              >ホームページを<br />
-              作るのは大変</span
-            >
-          </p>
-          <div class="worries__item-bubble">
-            <img src="../assets/images/common/icon-bubble.svg" alt="泡のアイコン" />
-          </div>
+          <p class="worries__text"><%- item.text %></p>
         </div>
       </li>
       <% }); %>

@@ -1,10 +1,11 @@
 @use 'global' as *;
 
-.concolle-form__inner {
-  padding: 64px 0 104px;
-}
 input::placeholder {
-  color: #8d9999;
+  color: #6c6c6c;
+}
+
+.concolle-form__inner {
+  padding: rem(64) 0 rem(104);
 }
 
 .concolle-form__wrapper {
@@ -14,38 +15,60 @@ input::placeholder {
 }
 
 .concolle-form__form {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
 }
 
-.concolle-form__group {
+.concolle-form__title {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.concolle-form__title img {
+  aspect-ratio: 800 / 231;
+  width: 100%;
+  object-fit: cover;
+}
+
+.concolle-form__message {
+  margin-top: rem(40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.concolle-form__group:not(:first-child) {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  margin-top: rem(24);
 }
 
 .concolle-form__label {
   display: flex;
-  gap: 8px;
+  gap: rem(8);
   align-items: center;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.04em;
   text-align: left;
-  margin-right: 8px;
+  margin-right: rem(8);
 }
 
 .concolle-form__label-required {
   display: inline-block;
   color: white;
   background-color: #eb537b;
-  font-size: 12px;
+  font-size: rem(12);
   font-weight: 700;
   line-height: 1x;
   letter-spacing: 0.03em;
-  padding: 1px 8px;
-  border-radius: 3px;
+  padding: rem(1) rem(8);
+  border-radius: rem(3);
 }
 
 .concolle-form__label-required--optional {
@@ -53,12 +76,13 @@ input::placeholder {
 }
 
 .concolle-form__input {
-  padding: 12px;
-  border: 1px solid $black;
-  border-radius: 4px;
-  font-size: 16px;
+  background-color: white;
+  padding: rem(11) rem(12);
+  border: rem(1) solid $black;
+  border-radius: rem(4);
+  font-size: rem(16);
   line-height: 1.6;
-  margin-top: 8px;
+  margin-top: rem(8);
 }
 
 .concolle-form__input:focus {
@@ -69,48 +93,48 @@ input::placeholder {
 .concolle-form__submit {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: rem(40);
 }
 
 .concolle-form__note {
-  font-size: 12px;
+  font-size: rem(12);
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: rem(19.2);
   letter-spacing: 0.04em;
   text-align: left;
-  color: #8d9999;
-  margin-top: 8px;
+  color: #6c6c6c;
+  margin-top: rem(8);
 }
 
 .concolle-form__radio-group {
-  margin-top: 8px;
+  margin-top: rem(8);
   display: flex;
-  gap: 16px;
+  gap: rem(16);
 }
 
 .concolle-form__radio-item {
   width: 50%;
   display: flex;
-  gap: 8px;
+  gap: rem(12);
   align-items: center;
-  padding: 12px 8px;
+  padding: rem(11) rem(8);
   color: #6c6c6c;
-  border: 1px solid #cccccc;
+  border: rem(1) solid #cccccc;
   background-color: #f4f4f4;
-  border-radius: 5px;
+  border-radius: rem(5);
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .concolle-form__radio-input {
-  width: 19px;
-  height: 19px;
+  width: rem(19);
+  height: rem(19);
   margin: 0;
   accent-color: #0c8d8d;
 }
 
 .concolle-form__radio-label {
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.04em;
@@ -119,12 +143,16 @@ input::placeholder {
 
 .concolle-form__radio-item.checked {
   background-color: #edffff;
-  border: 1px solid #0c8d8d;
+  border: rem(1) solid #0c8d8d;
   color: $black;
-  border-radius: 5px;
+  border-radius: rem(5);
 }
 
 /* 未選択時の状態をカスタマイズ */
 .concolle-form__radio-input:not(:checked) {
   accent-color: #b0b0b0; /* グレーを緑に変更 */
+}
+
+.concolle-form__input--textarea {
+  padding: 15px 12px;
 }

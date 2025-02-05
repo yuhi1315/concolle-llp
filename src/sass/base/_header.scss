@@ -8,12 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mq('md') {
+    justify-content: end;
+  }
 }
 
 .header__left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: rem(8);
 }
 
@@ -34,9 +37,15 @@
 }
 
 .header__right {
+  max-width: 260px;
+  width: 100%;
+  @include mq('md') {
+    max-width: 180px;
+  }
 }
 
 .header__button {
+  width: 100%;
   color: white;
   background: #a4ecec;
   background-image: linear-gradient(183.86deg, #73dede 3.09%, #2da6a6 96.78%);
@@ -49,4 +58,8 @@
   letter-spacing: 0.04em;
   text-align: left;
   box-shadow: rem(0) rem(3) rem(0) rem(0) $black;
+  @include mq('md') {
+    padding: rem(12) rem(22.5);
+    font-size: 13px;
+  }
 }

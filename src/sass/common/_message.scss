@@ -8,31 +8,31 @@
 }
 
 .message__inner {
-  padding: 104px 0;
+  padding: rem(104) 0;
 }
 
 .message__top {
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.04em;
   text-align: center;
   position: relative;
-  left: 1px;
+  left: rem(1);
   @include mq('md') {
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 
 .message__bottom {
   width: fit-content;
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: rem(24);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  left: -14px;
+  left: rem(-14);
   @include mq('md') {
     width: auto;
     left: 0;
@@ -49,17 +49,17 @@
 }
 .message__bottom::before {
   background-image: url('../images/common/icon-left-star.svg');
-  height: 50px;
-  left: -69px;
-  top: -17px;
-  width: 47px;
+  height: rem(50);
+  left: rem(-69);
+  top: rem(-17);
+  width: rem(47);
 }
 .message__bottom::after {
   background-image: url('../images/common/icon-right-star.svg');
-  height: 57px;
-  right: -49px;
-  top: 64px;
-  width: 47px;
+  height: rem(57);
+  right: rem(-49);
+  top: rem(64);
+  width: rem(47);
   @include mq('md') {
     display: none;
   }
@@ -94,8 +94,8 @@
 
 .message__arrow-icon {
   position: absolute;
-  right: -68px;
-  top: -47px;
+  right: rem(-68);
+  top: rem(-47);
   z-index: -1;
   @include mq('md') {
     display: none;

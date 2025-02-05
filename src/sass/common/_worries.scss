@@ -4,14 +4,14 @@
 }
 
 .worries__inner {
-  padding-top: 104px;
+  padding-top: rem(66);
 }
 
 .worries__content {
   position: relative;
   max-width: 1061px;
   margin: 0 auto;
-  height: 640px;
+  height: rem(640);
   display: flex;
   align-items: end;
   justify-content: center;
@@ -20,19 +20,25 @@
 .worries__person {
   max-width: 320px;
   width: 100%;
+  @include mq('md') {
+    max-width: 188px;
+  }
 }
 .worries__person img {
   aspect-ratio: 320/256;
   object-fit: cover;
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 188/150;
+  }
 }
 
 .worries__item {
   position: absolute;
   content: '';
   display: block;
-  width: 247px;
-  height: 229px;
+  width: rem(247);
+  height: rem(229);
   background-image: url('../images/common/frame-cloud.svg');
   background-size: cover;
 }
@@ -51,13 +57,16 @@
   width: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 46%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: rem(20);
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: 0.04em;
   text-align: center;
+  @include mq('md') {
+    font-size: rem(13);
+  }
 }
 
 .worries__text span {
@@ -72,111 +81,113 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 112px;
+  margin-top: rem(117);
 }
 
 .worries__top-text {
   color: white;
   font-family: Zen Maru Gothic;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 800;
   line-height: 1;
   text-align: center;
-  -webkit-text-stroke: 3px #eb537b;
+  -webkit-text-stroke: rem(3) #eb537b;
+  @include mq('md') {
+    font-size: rem(24);
+  }
 }
 
 // 一つ目の悩みボックス
 .worries__item:nth-child(2) {
+  background-image: url('../images/common/frame-cloud-1.svg');
+  width: rem(247);
+  height: rem(253);
   left: rem(69);
-  top: rem(130);
+  top: rem(108);
+  @include mq('md') {
+    background-image: url('../images/common/frame-cloud-sp-1.png');
+    width: rem(168);
+    height: rem(124);
+  }
 }
 
 .worries__item:nth-child(2) .worries__text {
-  top: 44%;
+  top: 50%;
 }
 
-.worries__item:nth-child(2) .worries__item-bubble {
-  right: 0;
-  bottom: 1px;
-}
-
-.worries__item:nth-child(2) .worries__item-tornado {
-  right: 0;
-  top: -26px;
-}
+// 2つ目の悩みボックス
 
 .worries__item:nth-child(3) {
   left: rem(399);
-  top: rem(71);
+  top: rem(33);
+  background-image: url('../images/common/frame-cloud-2.svg');
+  width: rem(248);
+  height: rem(297);
+  @include mq('md') {
+    background-image: url('../images/common/frame-cloud-sp-2.png');
+    width: rem(171);
+    height: rem(106);
+  }
 }
 
-.worries__item .worries__text:nth-child(3) {
-  top: 44%;
+.worries__item:nth-child(3) .worries__text {
+  top: 49%;
 }
 
-.worries__item .worries__item-bubble:nth-child(3) {
-  right: 0;
-  bottom: 1px;
-}
-
-.worries__item .worries__item-tornado:nth-child(3) {
-  right: 0;
-  top: -26px;
+.worries__item:nth-child(3) .worries__item-tornado {
+  right: rem(42);
+  top: rem(-41);
 }
 
 .worries__item:nth-child(4) {
   right: rem(73);
-  top: rem(158);
+  top: rem(138);
+  background-image: url('../images/common/frame-cloud-3.svg');
+  width: rem(249);
+  height: rem(252);
+  @include mq('md') {
+    background-image: url('../images/common/frame-cloud-sp-3.png');
+    width: rem(160.61);
+    height: rem(95.75);
+  }
 }
 
-.worries__item .worries__text:nth-child(4) {
-  top: 44%;
-}
-
-.worries__item .worries__item-bubble:nth-child(4) {
-  right: 0;
-  bottom: 1px;
-}
-
-.worries__item .worries__item-tornado:nth-child(4) {
-  right: 0;
-  top: -26px;
+.worries__item:nth-child(4) .worries__text {
+  top: 50%;
 }
 
 .worries__item:nth-child(5) {
   left: rem(0);
-  bottom: rem(-33);
+  bottom: rem(-15);
+  background-image: url('../images/common/frame-cloud-4.svg');
+  width: rem(291);
+  height: rem(247);
+  @include mq('md') {
+    background-image: url('../images/common/frame-cloud-sp-4.png');
+    width: rem(161);
+    height: rem(108);
+  }
 }
 
-.worries__item .worries__text:nth-child(5) {
-  top: 44%;
-}
-
-.worries__item .worries__item-bubble:nth-child(5) {
-  right: 0;
-  bottom: 1px;
-}
-
-.worries__item .worries__item-tornado:nth-child(5) {
-  right: 0;
-  top: -26px;
+.worries__item:nth-child(5) .worries__text {
+  top: 58%;
+  left: 43%;
 }
 
 .worries__item:nth-child(6) {
   right: rem(0);
-  bottom: rem(-53);
+  bottom: rem(-33);
+  background-image: url('../images/common/frame-cloud-5.svg');
+  width: rem(293);
+  height: rem(247);
+  @include mq('md') {
+    background-image: url('../images/common/frame-cloud-sp-5.png');
+    width: rem(140);
+    height: rem(117);
+  }
 }
 
-.worries__item .worries__text:nth-child(6) {
-  top: 44%;
-}
-
-.worries__item .worries__item-bubble:nth-child(6) {
-  right: 0;
-  bottom: 1px;
-}
-
-.worries__item .worries__item-tornado:nth-child(6) {
-  right: 0;
-  top: -26px;
+.worries__item:nth-child(6) .worries__text {
+  top: 58%;
+  left: 57%;
 }
