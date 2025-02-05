@@ -6,10 +6,11 @@ const items = [
 >にて必要情報を入力して送信！` }, // 1
 <!-- prettier-ignore -->
 { title: "ご登録情報の確認&スピード審査開始", text: "ご登録完了後、管理画面のログインIDと仮パスワードが発行され、すぐに審査が開始となります！" }, // 1
-  { title: "スピード審査完了&掲載開始", text: "審査がスピーディーに完了しだい、早速コンコレにて掲載スタート！掲載内容は随時更新可能です。" }, // 1
-];
-%>
-
+<!-- prettier-ignore -->
+{ title: `スピード審査完了&掲載開始`, text: `審査がスピーディーに完了しだい、早速コンコレにて掲載スタート！<br />掲載内容は随時更新可能です。`
+} // 1
+<!-- prettier-ignore -->
+]; %>
 <div class="flow">
   <div class="flow__wrapper">
     <p class="flow__text">スピーディーな審査ですぐに掲載可能！</p>
@@ -24,7 +25,10 @@ const items = [
       <% items.forEach((item, i) => { %>
       <li class="flow__step-item">
         <div class="flow__step-left">
-          <img src="../assets/images/common/icon-step-<%= i + 1 %>.svg" alt="お申し込み" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="../assets/images/common/icon-step-<%= i + 1 %>.svg" />
+            <img src="../assets/images/common/icon-step-sp-<%= i + 1 %>.svg" alt="お申し込み" />
+          </picture>
         </div>
         <div class="flow__step-right">
           <div class="flow__step-tag">

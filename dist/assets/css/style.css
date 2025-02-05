@@ -2187,7 +2187,10 @@ input::placeholder {
 }
 
 .flow__title {
+	left: -3px;
 	max-width: 286px;
+	position: relative;
+	top: 4px;
 }
 
 .flow__title img {
@@ -2201,6 +2204,7 @@ input::placeholder {
 
 .flow__step-icon {
 	max-width: 100px;
+	top: -8.5%;
 }
 
 .flow__step-icon img {
@@ -2249,12 +2253,20 @@ input::placeholder {
 	max-width: 65px;
 }
 
+.flow__step-item:nth-child(3) .flow__step-left img {
+	aspect-ratio: 65/185;
+}
+
 .flow__step-item:nth-child(3) .flow__step-right {
 	padding-top: 4;
 }
 
 .flow__step-item:nth-child(4) .flow__step-left {
 	max-width: 65px;
+}
+
+.flow__step-item:nth-child(4) .flow__step-left img {
+	aspect-ratio: 65/65;
 }
 
 .flow__step-item:nth-child(4) .flow__step-right {

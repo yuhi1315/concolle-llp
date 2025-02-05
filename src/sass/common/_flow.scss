@@ -28,6 +28,9 @@
   width: 100%;
   @include mq('md') {
     max-width: 286px;
+    position: relative;
+    top: 4px;
+    left: -3px;
   }
 }
 .flow__title img {
@@ -86,6 +89,7 @@
   width: 100%;
   @include mq('md') {
     max-width: 100px;
+    top: -8.5%;
   }
 }
 
@@ -199,6 +203,9 @@
   object-fit: cover;
   aspect-ratio: 174 / 263;
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 65 / 185;
+  }
 }
 
 .flow__step-item:nth-child(3) .flow__step-right {
@@ -219,6 +226,9 @@
   object-fit: cover;
   aspect-ratio: 174 / 191;
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 65 / 65;
+  }
 }
 
 .flow__step-item:nth-child(4) .flow__step-right {
