@@ -8,17 +8,26 @@
   max-width: 860px;
   width: 100%;
   margin: 0 auto;
+  @include mq('md') {
+    padding: rem(40) rem(7.5);
+  }
 }
 
 .faq__title {
   margin: 0 auto;
   max-width: 483.97px;
   width: 100%;
+  @include mq('md') {
+    max-width: 294px;
+  }
 }
 .faq__title img {
   aspect-ratio: 483.97 / 90;
   width: 100%;
   object-fit: cover;
+  @include mq('md') {
+    aspect-ratio: 294 / 51;
+  }
 }
 
 .faq__list {
@@ -26,6 +35,9 @@
   display: flex;
   flex-direction: column;
   gap: rem(16);
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }
 
 .faq__item {
@@ -33,6 +45,9 @@
   border: rem(1) solid $black;
   border-radius: rem(8);
   background-color: white;
+  @include mq('md') {
+    padding: rem(16) rem(16) rem(24) rem(16);
+  }
 }
 
 .faq__question {
@@ -49,16 +64,22 @@
   line-height: 1.6;
   letter-spacing: 0.04em;
   text-align: left;
+  @include mq('md') {
+    font-size: rem(24);
+  }
 }
 
 .faq__question-text {
   padding: rem(9) 0 rem(20);
-
   font-size: rem(24);
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.04em;
   text-align: left;
+  @include mq('md') {
+    font-size: rem(18);
+    padding: rem(6) 0 rem(11);
+  }
 }
 
 .faq__answer {
@@ -76,6 +97,9 @@
   line-height: 1;
   letter-spacing: 0.04em;
   text-align: center;
+  @include mq('md') {
+    font-size: rem(24);
+  }
 }
 
 .faq__answer-text {
@@ -84,4 +108,7 @@
   line-height: 1.8;
   letter-spacing: 0.04em;
   text-align: left;
+  @include mq('md') {
+    font-size: rem(14);
+  }
 }
