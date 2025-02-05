@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-color: #fffbf2;
   background-position: bottom;
+  @include mq('md') {
+    background-position: center rem(-160);
+  }
 }
 
 .concolle__mv-inner {
@@ -13,13 +16,14 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: rem(40);
+  padding-left: rem(40);
   @include mq('md') {
     max-width: 600px;
     width: 100%;
-    padding-right: 8.5px;
-    padding-left: 8.5px;
+    padding-right: rem(8.5);
+    padding-left: rem(8.5);
+    padding-bottom: rem(102);
   }
 }
 
@@ -33,6 +37,7 @@
   margin-top: rem(37);
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: rem(32);
   @include mq('md') {
     flex-direction: column;

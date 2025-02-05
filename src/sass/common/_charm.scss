@@ -58,7 +58,7 @@
   gap: rem(69);
   @include mq('md') {
     padding: 0 rem(20);
-    margin-top: 24px;
+    margin-top: rem(24);
     gap: rem(30);
   }
 }

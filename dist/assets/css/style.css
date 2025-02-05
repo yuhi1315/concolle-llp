@@ -692,12 +692,13 @@ button:hover {
 	margin: 0 auto;
 	max-width: 1440px;
 	padding-bottom: 1rem;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 	width: 100%;
 }
 
 .concolle__mv-buttons {
+	align-items: center;
 	display: flex;
 	gap: 2rem;
 	justify-content: center;
@@ -757,7 +758,7 @@ button:hover {
 
 .faq__title {
 	margin: 0 auto;
-	max-width: 483.97px;
+	max-width: 30.248125rem;
 	width: 100%;
 }
 
@@ -957,9 +958,9 @@ button:hover {
 }
 
 .flow__step-description a {
-	border-bottom: 1px solid #eb537b;
+	border-bottom: 0.0625rem solid #eb537b;
 	color: #eb537b;
-	padding-bottom: 2px;
+	padding-bottom: 0.125rem;
 }
 
 .flow__step-item:nth-child(2) .flow__step-left {
@@ -985,7 +986,7 @@ button:hover {
 }
 
 .flow__step-item:nth-child(3) .flow__step-right {
-	padding-top: 8px;
+	padding-top: 0.5rem;
 }
 
 .flow__step-item:nth-child(4) .flow__step-left {
@@ -1000,7 +1001,7 @@ button:hover {
 }
 
 .flow__step-item:nth-child(4) .flow__step-right {
-	padding-top: 8px;
+	padding-top: 0.5rem;
 }
 
 input::-moz-placeholder {
@@ -1024,7 +1025,7 @@ input::placeholder {
 .concolle-form__form {
 	display: flex;
 	flex-direction: column;
-	margin-top: 48px;
+	margin-top: 3rem;
 }
 
 .concolle-form__title {
@@ -1041,7 +1042,7 @@ input::placeholder {
 }
 
 .concolle-form__message {
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: 0.04em;
 	line-height: 1.8;
@@ -1164,7 +1165,7 @@ input::placeholder {
 }
 
 .concolle-form__input--textarea {
-	padding: 15px 12px;
+	padding: 0.9375rem 0.75rem;
 }
 
 .message {
@@ -1285,7 +1286,7 @@ input::placeholder {
 }
 
 .mission__english-text {
-	border-bottom: 1px solid #eb537b;
+	border-bottom: 0.0625rem solid #eb537b;
 	color: #eb537b;
 	font-family: Quicksand;
 	font-size: 1.375rem;
@@ -1411,11 +1412,11 @@ input::placeholder {
 }
 
 .mission__box-text--large {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .mission__box-text--bold {
-	font-size: 32px;
+	font-size: 2rem;
 }
 
 .mission__box-text-gradation {
@@ -1435,9 +1436,9 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(1) .mission__box-text-gradation {
-	left: 2px;
+	left: 0.125rem;
 	position: relative;
-	top: 8px;
+	top: 0.5rem;
 }
 
 .mission__box-item:nth-child(1) .mission__box-item-wrapper {
@@ -1451,9 +1452,9 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(2) .mission__box-text-gradation {
-	left: 2px;
+	left: 0.125rem;
 	position: relative;
-	top: 4px;
+	top: 0.25rem;
 }
 
 .mission__box-item:nth-child(3) {
@@ -1468,8 +1469,8 @@ input::placeholder {
 }
 
 .mv-title__icon-mac {
-	bottom: -118px;
-	left: 71px;
+	bottom: -7.375rem;
+	left: 4.4375rem;
 	max-width: 248px;
 	position: absolute;
 	width: 100%;
@@ -1481,10 +1482,10 @@ input::placeholder {
 }
 
 .mv-title__icon-phone {
-	bottom: -13px;
+	bottom: -0.8125rem;
 	max-width: 210px;
 	position: absolute;
-	right: 102px;
+	right: 6.375rem;
 	width: 100%;
 }
 
@@ -1751,8 +1752,13 @@ input::placeholder {
 	margin-top: 2.5rem;
 }
 
+.mission {
+	background-image: url("../images/common/bg-mission-sp.svg");
+}
+
 .mission__box {
 	background-image: url("../images/common/bg-box-sp.svg");
+	margin-top: 2.75rem;
 }
 
 .mission__box-list {
@@ -1764,7 +1770,7 @@ input::placeholder {
 }
 
 .mission__box-icon {
-	max-width: 8.125rem;
+	max-width: 130px;
 	top: -1.25rem;
 }
 
@@ -1786,11 +1792,11 @@ input::placeholder {
 }
 
 .mission__box-text--large {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .mission__box-text--bold {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 600;
 }
 
@@ -1800,10 +1806,10 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(1) {
-	left: -7px;
+	left: -0.4375rem;
 	max-width: 137px;
 	order: 2;
-	top: -12px;
+	top: -0.75rem;
 }
 
 .mission__box-item:nth-child(1) .mission__box-item-icon {
@@ -1823,18 +1829,18 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(1) .mission__box-text-gradation {
-	left: -2px;
-	top: 2px;
+	left: -0.125rem;
+	top: 0.125rem;
 }
 
 .mission__box-item:nth-child(1) .mission__box-item-wrapper {
-	top: 2px;
+	top: 0.125rem;
 }
 
 .mission__box-item:nth-child(2) {
 	max-width: 166px;
 	order: 1;
-	top: -12px;
+	top: -0.75rem;
 }
 
 .mission__box-item:nth-child(2) .mission__box-item-icon {
@@ -1846,8 +1852,8 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(2) .mission__box-text-gradation {
-	left: -5px;
-	top: 1px;
+	left: -0.3125rem;
+	top: 0.0625rem;
 }
 
 .mission__box-item:nth-child(2) .mission__box-text-bold {
@@ -1861,14 +1867,14 @@ input::placeholder {
 }
 
 .mission__box-item:nth-child(3) {
-	left: -7px;
+	left: -0.4375rem;
 	max-width: 136px;
 	order: 3;
-	top: -12px;
+	top: -0.75rem;
 }
 
 .mission__box-item:nth-child(3) .mission__box-text {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .mission__box-item:nth-child(3) .mission__box-item-icon {
@@ -1923,7 +1929,7 @@ input::placeholder {
 }
 
 .header__button {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	padding: 0.75rem 1.40625rem;
 }
 
@@ -2006,7 +2012,7 @@ input::placeholder {
 
 .charm__items {
 	gap: 1.875rem;
-	margin-top: 24px;
+	margin-top: 1.5rem;
 	padding: 0 1.25rem;
 }
 
@@ -2096,10 +2102,20 @@ input::placeholder {
 	width: 2rem;
 }
 
+.common-btn--inquiry .common-btn__button {
+	font-size: 1.125rem;
+	padding: 1.0625rem 5.25rem 1.0625rem 4.25rem;
+}
+
+.concolle__mv {
+	background-position: center -10rem;
+}
+
 .concolle__mv-inner {
 	max-width: 600px;
-	padding-left: 8.5px;
-	padding-right: 8.5px;
+	padding-bottom: 6.375rem;
+	padding-left: 0.53125rem;
+	padding-right: 0.53125rem;
 	width: 100%;
 }
 
@@ -2195,7 +2211,7 @@ input::placeholder {
 
 .flow__step-right {
 	gap: 0.5rem;
-	padding-top: 4px;
+	padding-top: 0.25rem;
 }
 
 .flow__step-tag {
@@ -2240,7 +2256,7 @@ input::placeholder {
 }
 
 .concolle-form__form {
-	margin-top: 24px;
+	margin-top: 1.5rem;
 }
 
 .concolle-form__message {
@@ -2338,6 +2354,26 @@ input::placeholder {
 	width: 20.75rem;
 }
 
+.mv-title__icon-mac {
+	bottom: -23.8125rem;
+	left: 0.5625rem;
+	max-width: 136px;
+}
+
+.mv-title__icon-mac img {
+	aspect-ratio: 136/180;
+}
+
+.mv-title__icon-phone {
+	bottom: -24.6875rem;
+	max-width: 117px;
+	right: -0.25rem;
+}
+
+.mv-title__icon-phone img {
+	aspect-ratio: 117/143;
+}
+
 .mv-title__top {
 	max-width: 18.98rem;
 }
@@ -2348,7 +2384,7 @@ input::placeholder {
 
 .mv-title__bottom {
 	margin-top: -0.3125rem;
-	max-width: 20.9375rem;
+	max-width: 335px;
 }
 
 .mv-title__bottom img {
@@ -2369,7 +2405,7 @@ input::placeholder {
 }
 
 .mv-title__crown {
-	max-width: 7.25rem;
+	max-width: 116px;
 }
 
 .mv-title__crown img {

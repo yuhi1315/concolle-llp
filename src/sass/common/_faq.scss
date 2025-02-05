@@ -12,7 +12,7 @@
 
 .faq__title {
   margin: 0 auto;
-  max-width: 483.97px;
+  max-width: rem(483.97);
   width: 100%;
   @include mq('md') {
     max-width: 294px;

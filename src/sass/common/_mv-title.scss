@@ -9,25 +9,41 @@
 
 .mv-title__icon-mac {
   position: absolute;
-  left: 71px;
-  bottom: -118px;
+  left: rem(71);
+  bottom: rem(-118);
   max-width: 248px;
   width: 100%;
+  @include mq('md') {
+    left: rem(9);
+    bottom: rem(-381);
+    max-width: 136px;
+  }
 }
 .mv-title__icon-mac img {
   aspect-ratio: 248 / 328;
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 136 / 180;
+  }
 }
 
 .mv-title__icon-phone {
   position: absolute;
-  right: 102px;
-  bottom: -13px;
+  right: rem(102);
+  bottom: rem(-13);
   max-width: 210px;
   width: 100%;
+  @include mq('md') {
+    right: rem(-4);
+    bottom: rem(-395);
+    max-width: 117px;
+  }
 }
 .mv-title__icon-phone img {
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 117 / 143;
+  }
 }
 
 .mv-title__heading {
@@ -57,7 +73,7 @@
   max-width: 981px;
   width: 100%;
   @include mq('md') {
-    max-width: rem(335);
+    max-width: 335px;
     margin-top: rem(-5);
   }
 }
@@ -99,7 +115,7 @@
   max-width: 175px;
   width: 100%;
   @include mq('md') {
-    max-width: rem(116);
+    max-width: 116px;
   }
 }
 .mv-title__crown img {

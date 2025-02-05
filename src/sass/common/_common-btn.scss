@@ -133,6 +133,10 @@
   background: #f7afc2;
   background-image: linear-gradient(183.86deg, #f7afc2 3.3%, #eb537b 96.99%);
   padding: rem(24) rem(74.5) rem(24) rem(52.5);
+  @include mq('md') {
+    font-size: rem(18);
+    padding: rem(17) rem(84) rem(17) rem(68);
+  }
 }
 
 .common-btn--inquiry .common-btn__button::after {

@@ -54,6 +54,6 @@
   box-shadow: rem(0) rem(3) rem(0) rem(0) $black;
   @include mq('md') {
     padding: rem(12) rem(22.5);
-    font-size: 13px;
+    font-size: rem(13);
   }
 }

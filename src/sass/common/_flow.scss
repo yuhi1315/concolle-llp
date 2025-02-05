@@ -130,7 +130,7 @@
   gap: rem(16);
   @include mq('md') {
     gap: rem(8);
-    padding-top: 4px;
+    padding-top: rem(4);
   }
 }
 
@@ -166,8 +166,8 @@
 
 .flow__step-description a {
   color: $primary-90;
-  border-bottom: 1px solid $primary-90;
-  padding-bottom: 2px;
+  border-bottom: rem(1) solid $primary-90;
+  padding-bottom: rem(2);
 }
 
 //　ステップ１のスタイル
@@ -202,7 +202,7 @@
 }
 
 .flow__step-item:nth-child(3) .flow__step-right {
-  padding-top: 8px;
+  padding-top: rem(8);
   @include mq('md') {
     padding-top: 4;
   }
@@ -222,7 +222,7 @@
 }
 
 .flow__step-item:nth-child(4) .flow__step-right {
-  padding-top: 8px;
+  padding-top: rem(8);
   @include mq('md') {
     padding-top: 4;
   }
