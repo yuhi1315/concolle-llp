@@ -16,6 +16,7 @@ $mediaquerys: (
   //スマホファースト
   $breakpoints: (
     sp: 420,
+    spx: 500,
     sm: 600,
     md: 768,
     lg: 1024,
@@ -28,6 +29,7 @@ $mediaquerys: (
   //メディアクエリー
   $mediaquerys: (
     sp: "screen and (min-width: #{map-get($breakpoints,'sp')}px)",
+    spx: "screen and (min-width: #{map-get($breakpoints,'spx')}px)",
     sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
     md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
@@ -45,10 +47,12 @@ $mediaquerys: (
     lgx: 1300,
     md: 767,
     sm: 600,
+    spx: 500,
     sp: 420
   );
   $mediaquerys: (
     sp: "screen and (max-width: #{map-get($breakpoints,'sp')}px)",
+    spx: "screen and (max-width: #{map-get($breakpoints,'spx')}px)",
     sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
     md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",

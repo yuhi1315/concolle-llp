@@ -7,7 +7,7 @@ const items = [
   { type: 'email', isRequired: true, label: "メールアドレス" ,id: "mail" ,placeholder:"例）info@concolle.com",annotation:'' },
   { type: 'tel', isRequired: true, label: "電話番号" ,id: "tell" ,placeholder:"例）0123456789",annotation:'※半角数字でご入力ください。ハイフン(-)は不要です。' },
   { type: 'text', isRequired: true, label: "ご住所" ,id: "address" ,placeholder:"例）東京都渋谷区〇〇",annotation:'' },
-  { type: 'url', isRequired: false, label: "URL" ,id: "address" ,placeholder:"例）https://concolle.com",annotation:'' },
+  { type: 'url', isRequired: false, label: "URL" ,id: "url" ,placeholder:"例）https://concolle.com",annotation:'' },
 ];
 
 %>
@@ -15,7 +15,10 @@ const items = [
 <section class="concolle-form" id="concolle-form">
   <div class="concolle-form__inner">
     <h2 class="concolle-form__title">
-      <img src="../assets/images/common/text-form.png" alt="掲載お申し込み・お問い合わせフォーム" />
+      <picture>
+        <source srcset="../assets/images/common/text-form-sp.png" media="(max-width: 500px)" />
+        <img src="../assets/images/common/text-form.png" alt="掲載お申し込み・お問い合わせフォーム" />
+      </picture>
     </h2>
     <div class="concolle-form__wrapper">
       <p class="concolle-form__message">
@@ -41,7 +44,7 @@ const items = [
 
         <% items.forEach(item => { %>
         <div class="concolle-form__group concolle-form__group--<%= item.id %>">
-          <label for="company" class="concolle-form__label">
+          <label for="<%= item.id %>" class="concolle-form__label">
             <span
               class="concolle-form__label-required concolle-form__label-required--<%= item.isRequired ? 'required' : 'optional' %>"
             >

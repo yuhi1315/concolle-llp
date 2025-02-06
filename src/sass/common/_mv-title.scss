@@ -13,6 +13,16 @@
   bottom: rem(-118);
   max-width: 248px;
   width: 100%;
+  @include mq('lgx') {
+    max-width: 170px;
+    left: rem(-22);
+    bottom: rem(50);
+  }
+  @include mq('lg') {
+    max-width: 120px;
+    left: rem(-22);
+    bottom: rem(80);
+  }
   @include mq('md') {
     left: rem(9);
     bottom: rem(-381);
@@ -33,6 +43,16 @@
   bottom: rem(-13);
   max-width: 210px;
   width: 100%;
+  @include mq('lgx') {
+    max-width: 170px;
+    right: rem(-16);
+    bottom: rem(58);
+  }
+  @include mq('lg') {
+    max-width: 110px;
+    right: rem(-40);
+    bottom: rem(80);
+  }
   @include mq('md') {
     right: rem(-4);
     bottom: rem(-395);

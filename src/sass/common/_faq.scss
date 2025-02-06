@@ -1,11 +1,12 @@
 @use 'global' as *;
 
 .faq__wrapper {
-  padding: rem(104) 0;
-  max-width: 860px;
+  padding: rem(104) rem(40);
+  max-width: 940px;
   width: 100%;
   margin: 0 auto;
   @include mq('md') {
+    max-width: 600px;
     padding: rem(40) rem(7.5);
   }
 }

@@ -1,9 +1,9 @@
 @use 'global' as *;
 
 .charm {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: rem(104) 0;
+  padding: rem(104) rem(40);
   @include mq('md') {
     max-width: 600px;
     padding: rem(40) rem(7.5);

@@ -88,6 +88,8 @@
 }
 
 .common-btn__button {
+  cursor: pointer;
+  display: inline-block;
   position: relative;
   width: 100%;
   color: white;
@@ -102,9 +104,17 @@
   letter-spacing: 0.04em;
   text-align: left;
   box-shadow: rem(0) rem(3) rem(0) rem(0) $black;
+  transition: box-shadow 0.3s ease, transform 0.1s ease; /* スムーズな変化 */
   @include mq('md') {
     font-size: rem(18);
     padding: rem(17) rem(84) rem(17) rem(68);
+  }
+}
+
+@media (hover: hover) {
+  .common-btn__button:hover {
+    box-shadow: none; /* ホバー時に影を消す */
+    transform: translateY(rem(2)); /* 押下時に少し下に動かす */
   }
 }
 

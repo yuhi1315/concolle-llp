@@ -39,6 +39,9 @@
   justify-content: center;
   align-items: center;
   gap: rem(32);
+  @include mq('lgx') {
+    gap: rem(16);
+  }
   @include mq('md') {
     flex-direction: column;
     margin-top: rem(19);
@@ -50,6 +53,9 @@
 .concolle__mv-button {
   max-width: 380px;
   width: 100%;
+  @include mq('lgx') {
+    max-width: 370px;
+  }
 }
 
 .concolle__worries {
@@ -70,6 +76,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @include mq('md') {
+    background-image: url(../images/common/bg-charm-sp.svg);
+  }
 }
 
 .concolle__flow {

@@ -80,10 +80,30 @@
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
+  position: relative;
   @include mq('md') {
     font-size: rem(22);
     margin-top: rem(20);
   }
+}
+
+.mission__bg-text {
+  position: absolute;
+  top: -185px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 1514px;
+  width: 100vw;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.mission__bg-text img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .mission__heading-white {
