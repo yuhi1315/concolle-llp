@@ -15,24 +15,24 @@ const items = [
   <div class="flow__wrapper">
     <p class="flow__text">スピーディーな審査ですぐに掲載可能！</p>
     <h2 class="flow__title">
-      <img src="../assets/images/common/text-flow.png" alt="掲載までの流れ" />
+      <img src="assets/images/common/text-flow.png" alt="掲載までの流れ" />
     </h2>
 
     <ul class="flow__step">
       <div class="flow__step-icon">
-        <img src="../assets/images/common/icon-step-baloon.svg" alt="かんたん3ステップ!" />
+        <img src="assets/images/common/icon-step-baloon.svg" alt="かんたん3ステップ!" />
       </div>
       <% items.forEach((item, i) => { %>
       <li class="flow__step-item">
         <div class="flow__step-left">
           <picture>
-            <source media="(min-width: 768px)" srcset="../assets/images/common/icon-step-<%= i + 1 %>.svg" />
-            <img src="../assets/images/common/icon-step-sp-<%= i + 1 %>.svg" alt="お申し込み" />
+            <source media="(min-width: 768px)" srcset="assets/images/common/icon-step-<%= i + 1 %>.svg" />
+            <img src="assets/images/common/icon-step-sp-<%= i + 1 %>.svg" alt="お申し込み" />
           </picture>
         </div>
         <div class="flow__step-right">
           <div class="flow__step-tag">
-            <img src="../assets/images/common/icon-step-tag-<%= i + 1 %>.svg" alt="お申し込み" />
+            <img src="assets/images/common/icon-step-tag-<%= i + 1 %>.svg" alt="お申し込み" />
           </div>
           <p class="flow__step-title"><%- item.title %></p>
           <p class="flow__step-description"><%- item.text %></p>
