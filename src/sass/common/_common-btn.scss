@@ -109,6 +109,9 @@
     font-size: rem(18);
     padding: rem(17) rem(84) rem(17) rem(68);
   }
+  @include mq('esp') {
+    font-size: rem(14);
+  }
 }
 
 @media (hover: hover) {
@@ -146,6 +149,9 @@
   @include mq('md') {
     font-size: rem(18);
     padding: rem(17) rem(84) rem(17) rem(68);
+  }
+  @include mq('esp') {
+    font-size: rem(14);
   }
 }
 

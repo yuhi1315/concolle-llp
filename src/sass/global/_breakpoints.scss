@@ -3,6 +3,7 @@ $startFrom: pc;
 
 // デフォルト値を設定
 $mediaquerys: (
+  esp: 'screen',
   sp: 'screen',
   sm: 'screen',
   md: 'screen',
@@ -15,6 +16,7 @@ $mediaquerys: (
 @if $startFrom == sp {
   //スマホファースト
   $breakpoints: (
+    esp: 350,
     sp: 420,
     spx: 500,
     sm: 600,
@@ -48,9 +50,11 @@ $mediaquerys: (
     md: 767,
     sm: 600,
     spx: 500,
-    sp: 420
+    sp: 420,
+    esp: 350
   );
   $mediaquerys: (
+    esp: "screen and (max-width: #{map-get($breakpoints,'esp')}px)",
     sp: "screen and (max-width: #{map-get($breakpoints,'sp')}px)",
     spx: "screen and (max-width: #{map-get($breakpoints,'spx')}px)",
     sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",

@@ -2244,7 +2244,7 @@ input::placeholder {
 }
 
 .message__inner {
-	padding: 4.5rem 0;
+	padding: 4.5rem 7.5;
 }
 
 .message__top {
@@ -2254,11 +2254,22 @@ input::placeholder {
 .message__bottom {
 	left: -4px;
 	margin-top: 19px;
-	width: auto;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.message__bottom::before {
+	height: 2rem;
+	left: -0.5625rem;
+	top: -1.875rem;
+	width: 1.875rem;
 }
 
 .message__bottom::after {
-	display: none;
+	height: 2.4375rem;
+	right: -1.25rem;
+	top: 2.0625rem;
+	width: 1.9375rem;
 }
 
 .message__left {
@@ -2502,6 +2513,18 @@ input::placeholder {
 
 .concolle-form__title img {
 	aspect-ratio: 260/191.75;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.common-btn__button {
+	font-size: 0.875rem;
+}
+
+.common-btn--inquiry .common-btn__button {
+	font-size: 0.875rem;
 }
 
 }
