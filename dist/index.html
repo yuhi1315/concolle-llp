@@ -45,17 +45,19 @@
                   <div class="header__container">
                     <a href="#" class="header__left md-none">
                       <p class="header__text">
-                        全国コンカフェ情報<span>「コンコレ」</span>
+                        全国コンカフェ情報サイト<span>「コンコレ」</span>
                       </p>
                       <div class="header__logo">
                         <img
-                          src="../assets/images/common/icon-logo.svg"
+                          src="assets/images/common/icon-logo.svg"
                           alt="コンコレのロゴ"
                         />
                       </div>
                     </a>
                     <div class="header__right">
-                      <button class="header__button">無料掲載のお申込み</button>
+                      <a href="#form" class="header__button js-btn--header"
+                        >無料掲載のお申込み</a
+                      >
                     </div>
                   </div>
                 </header>
@@ -82,10 +84,16 @@
                   </div>
                   <h1 class="mv-title__heading">
                     <div class="mv-title__top">
-                      <img
-                        src="../assets/images/common/text-mv-top.png"
-                        alt="完全無料で掲載できるから"
-                      />
+                      <picture>
+                        <source
+                          srcset="assets/images/common/text-mv-top-sp.png"
+                          media="(max-width: 768px)"
+                        />
+                        <img
+                          src="assets/images/common/text-mv-top.png"
+                          alt="完全無料で掲載できるから"
+                        />
+                      </picture>
                     </div>
                     <div class="mv-title__bottom">
                       <img
@@ -124,7 +132,7 @@
                         <div class="common-btn__message">
                           <span>
                             <img
-                              src="../assets/images/common/text-publish.svg"
+                              src="assets/images/common/text-publish.svg"
                               alt="スピード審査"
                             />
                           </span>
@@ -132,7 +140,10 @@
                         </div>
                       </div>
 
-                      <a href="#" class="common-btn__button">
+                      <a
+                        href="#form"
+                        class="common-btn__button js-btn--publish"
+                      >
                         <span>今すぐ無料掲載する</span>
                       </a>
                     </div>
@@ -146,7 +157,7 @@
                           <p>まずは</p>
                           <span>
                             <img
-                              src="../assets/images/common/text-inquiry.svg"
+                              src="assets/images/common/text-inquiry.svg"
                               alt="お問い合わせ"
                             />
                           </span>
@@ -154,7 +165,10 @@
                         </div>
                       </div>
 
-                      <a href="#" class="common-btn__button">
+                      <a
+                        href="#form"
+                        class="common-btn__button js-btn--inquiry"
+                      >
                         <span>Webからお問い合わせ</span>
                       </a>
                     </div>
@@ -427,10 +441,28 @@
                     >コンコレが多くのコンカフェさまに選ばれる</span
                   >
                   <h2 class="charm__title-main">
-                    <img
-                      src="../assets/images/common/text-charm.png"
-                      alt="3つの魅力"
-                    />
+                    <div class="charm__title-star charm__title-star--left">
+                      <img
+                        src="assets/images/common/icon-charm-star-left.svg"
+                        alt="星のアイコン"
+                      />
+                    </div>
+                    <picture>
+                      <source
+                        srcset="assets/images/common/text-charm-sp.png"
+                        media="(max-width: 768px)"
+                      />
+                      <img
+                        src="assets/images/common/text-charm.png"
+                        alt="3つの魅力"
+                      />
+                    </picture>
+                    <div class="charm__title-star charm__title-star--right">
+                      <img
+                        src="assets/images/common/icon-charm-star-right.svg"
+                        alt="星のアイコン"
+                      />
+                    </div>
                   </h2>
                 </div>
                 <ul class="charm__items">
@@ -700,7 +732,7 @@
               </div>
             </div>
           </section>
-          <section class="concolle__form">
+          <section class="concolle__form" id="form">
             <section class="concolle-form" id="concolle-form">
               <div class="concolle-form__inner">
                 <h2 class="concolle-form__title">
@@ -978,7 +1010,10 @@
                     <div class="concolle-form__submit">
                       <div class="common-btn common-btn--form">
                         <div class="common-btn__wrapper">
-                          <a href="#" class="common-btn__button">
+                          <a
+                            href="#form"
+                            class="common-btn__button js-btn--form"
+                          >
                             <span>この内容で送信する</span>
                           </a>
                         </div>

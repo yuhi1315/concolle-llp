@@ -218,18 +218,6 @@ a {
 	transition: opacity 0.3s;
 }
 
-*::-webkit-scrollbar {
-	background-color: #f1f1f1;
-	height: 3px;
-	width: 5px;
-}
-
-/* スクロールバーのサム（つまみ）部分のスタイル */
-
-*::-webkit-scrollbar-thumb {
-	background-color: #4f5d6b;
-}
-
 html,
 body {
 	height: 100%;
@@ -245,22 +233,6 @@ button {
 a:hover,
 button:hover {
 	opacity: 0.7;
-}
-
-*::-webkit-scrollbar {
-	background-color: #f4f4f4;
-	border: 1px solid #221a15;
-	border-radius: 24px;
-	height: 6px;
-	width: 5px;
-}
-
-/* スクロールバーのサム（つまみ）部分のスタイル */
-
-*::-webkit-scrollbar-thumb {
-	background-color: #f090a9;
-	border: 1px solid #221a15;
-	border-radius: 24px;
 }
 
 .sub-title {
@@ -363,12 +335,47 @@ button:hover {
 
 .charm__title-main {
 	max-width: 289px;
+	position: relative;
 	width: 100%;
 }
 
 .charm__title-main img {
 	-o-object-fit: contain;
 	aspect-ratio: 289/96;
+	object-fit: contain;
+	width: 100%;
+}
+
+.charm__title-star {
+	position: absolute;
+}
+
+.charm__title-star--right {
+	height: 71px;
+	position: absolute;
+	right: -81px;
+	top: 22px;
+	width: 64px;
+}
+
+.charm__title-star--right img {
+	-o-object-fit: contain;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
+.charm__title-star--left {
+	height: 60px;
+	left: -73px;
+	position: absolute;
+	top: 4cap;
+	width: 57px;
+}
+
+.charm__title-star--left img {
+	-o-object-fit: contain;
+	height: 100%;
 	object-fit: contain;
 	width: 100%;
 }
@@ -1827,18 +1834,6 @@ input::placeholder {
 
 }
 
-@media (max-width: 768px) {
-
-*::-webkit-scrollbar {
-	width: 3px;
-}
-
-*::-webkit-scrollbar {
-	width: 6px;
-}
-
-}
-
 @media screen and (max-width: 767px) {
 
 .footer {
@@ -1933,6 +1928,20 @@ input::placeholder {
 
 .charm__title-main img {
 	aspect-ratio: 189/76;
+}
+
+.charm__title-star--right {
+	height: 48.46px;
+	right: -49px;
+	top: 17px;
+	width: 43.68px;
+}
+
+.charm__title-star--left {
+	height: 40.95px;
+	left: -49px;
+	top: 9px;
+	width: 38.9px;
 }
 
 .charm__items {
@@ -2337,11 +2346,12 @@ input::placeholder {
 }
 
 .mv-title__top {
+	margin-right: 0.75rem;
 	max-width: 18.98rem;
 }
 
 .mv-title__top img {
-	aspect-ratio: 303.68/42.95;
+	aspect-ratio: 290.77/42.95;
 }
 
 .mv-title__bottom {

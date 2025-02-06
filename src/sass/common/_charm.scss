@@ -38,6 +38,7 @@
 .charm__title-main {
   max-width: 289px;
   width: 100%;
+  position: relative;
   @include mq('md') {
     max-width: 189px;
   }
@@ -51,6 +52,48 @@
   }
 }
 
+.charm__title-star {
+  position: absolute;
+}
+
+.charm__title-star--right {
+  width: 64px;
+  height: 71px;
+  position: absolute;
+  top: 22px;
+  right: -81px;
+  @include mq('md') {
+    width: 43.68px;
+    height: 48.46px;
+    top: 17px;
+    right: -49px;
+  }
+}
+
+.charm__title-star--right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.charm__title-star--left {
+  width: 57px;
+  height: 60px;
+  position: absolute;
+  top: 4cap;
+  left: -73px;
+  @include mq('md') {
+    width: 38.9px;
+    height: 40.95px;
+    top: 9px;
+    left: -49px;
+  }
+}
+.charm__title-star--left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .charm__items {
   margin-top: rem(48);
   display: flex;

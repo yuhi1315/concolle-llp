@@ -18,7 +18,16 @@ const items = [
     <div class="charm__title">
       <span class="charm__text">コンコレが多くのコンカフェさまに選ばれる</span>
       <h2 class="charm__title-main">
-        <img src="../assets/images/common/text-charm.png" alt="3つの魅力" />
+        <div class="charm__title-star charm__title-star--left">
+          <img src="assets/images/common/icon-charm-star-left.svg" alt="星のアイコン" />
+        </div>
+        <picture>
+          <source srcset="assets/images/common/text-charm-sp.png" media="(max-width: 768px)" />
+          <img src="assets/images/common/text-charm.png" alt="3つの魅力" />
+        </picture>
+        <div class="charm__title-star charm__title-star--right">
+          <img src="assets/images/common/icon-charm-star-right.svg" alt="星のアイコン" />
+        </div>
       </h2>
     </div>
     <ul class="charm__items">

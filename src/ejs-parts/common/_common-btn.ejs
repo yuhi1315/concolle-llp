@@ -2,7 +2,7 @@
 <!-- prettier-ignore -->
 const publishText = `
 <span>
-  <img src="../assets/images/common/text-publish.svg" alt="スピード審査" />
+  <img src="assets/images/common/text-publish.svg" alt="スピード審査" />
 </span>
 <p>ですぐに掲載！</p>
 `;
@@ -10,7 +10,7 @@ const publishText = `
 const inquiryText = `
 <p>まずは</p>
 <span>
-  <img src="../assets/images/common/text-inquiry.svg" alt="お問い合わせ" />
+  <img src="assets/images/common/text-inquiry.svg" alt="お問い合わせ" />
 </span>
 <p>してみる</p>
 `;
@@ -44,7 +44,7 @@ switch (type) {
       <div class="common-btn__message"><%- messageText %></div>
     </div>
     <% } %>
-    <a href="#" class="common-btn__button">
+    <a href="#form" class="common-btn__button js-btn--<%= type %>">
       <span><%- buttonText %></span>
     </a>
   </div>
