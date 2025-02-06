@@ -91,19 +91,6 @@
   }
 }
 
-.worries__top-text {
-  color: white;
-  font-family: Zen Maru Gothic;
-  font-size: rem(32);
-  font-weight: 800;
-  line-height: 1;
-  text-align: center;
-  -webkit-text-stroke: rem(3) #eb537b;
-  @include mq('md') {
-    font-size: rem(24);
-  }
-}
-
 // 一つ目の悩みボックス
 .worries__item:nth-child(2) {
   background-image: url('../images/common/frame-cloud-1.svg');

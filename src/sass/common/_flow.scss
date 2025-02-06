@@ -42,32 +42,6 @@
   }
 }
 
-.flow__title-text-wrapper {
-  position: relative;
-}
-
-.flow__title-text {
-  color: white;
-  margin: 0 auto;
-  max-width: 480px;
-  width: 100%;
-  font-family: Zen Maru Gothic;
-  font-size: rem(56);
-  font-weight: 700;
-  line-height: rem(89.6);
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-shadow: rem(-1) rem(-1) 0 #eb537b, rem(1) rem(-1) 0 #eb537b, rem(-1) rem(1) 0 #eb537b, rem(1) rem(1) 0 #eb537b; /* 縁取り */
-}
-
-.flow__title-shadow {
-  color: white;
-  margin: 0 auto;
-  max-width: 480px;
-  width: 100%;
-}
-
 .flow__step {
   margin-top: rem(108);
   padding: rem(80);

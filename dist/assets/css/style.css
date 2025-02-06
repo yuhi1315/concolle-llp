@@ -529,13 +529,6 @@ button:hover {
 	background-image: url("../images/common/icon-arrow-pink.svg");
 }
 
-.common-btn__message text {
-	fill: white;
-	stroke: dimgray;
-	stroke-width: 3;
-	paint-order: stroke;
-}
-
 .concolle__mv {
 	background-color: #fffbf2;
 	background-image: url("../images/common/fv-bg.svg");
@@ -714,33 +707,6 @@ button:hover {
 	-o-object-fit: cover;
 	aspect-ratio: 480/90;
 	object-fit: cover;
-	width: 100%;
-}
-
-.flow__title-text-wrapper {
-	position: relative;
-}
-
-.flow__title-text {
-	-webkit-text-decoration-skip-ink: none;
-	color: white;
-	font-family: Zen Maru Gothic;
-	font-size: 3.5rem;
-	font-weight: 700;
-	line-height: 5.6rem;
-	margin: 0 auto;
-	max-width: 480px;
-	text-align: center;
-	text-decoration-skip-ink: none;
-	text-shadow: -0.0625rem -0.0625rem 0 #eb537b, 0.0625rem -0.0625rem 0 #eb537b, -0.0625rem 0.0625rem 0 #eb537b, 0.0625rem 0.0625rem 0 #eb537b; /* 縁取り */
-	text-underline-position: from-font;
-	width: 100%;
-}
-
-.flow__title-shadow {
-	color: white;
-	margin: 0 auto;
-	max-width: 480px;
 	width: 100%;
 }
 
@@ -952,7 +918,7 @@ input::placeholder {
 }
 
 .concolle-form__input:focus {
-	border-color: #00acc1;
+	border-color: #0c8d8d;
 	outline: none;
 }
 
@@ -1496,16 +1462,6 @@ input::placeholder {
 	margin-top: 7.3125rem;
 	max-width: 1200px;
 	width: 100%;
-}
-
-.worries__top-text {
-	-webkit-text-stroke: 0.1875rem #eb537b;
-	color: white;
-	font-family: Zen Maru Gothic;
-	font-size: 2rem;
-	font-weight: 800;
-	line-height: 1;
-	text-align: center;
 }
 
 .worries__item:nth-child(2) {
@@ -2317,10 +2273,6 @@ input::placeholder {
 
 .worries__message {
 	margin-top: 2rem;
-}
-
-.worries__top-text {
-	font-size: 1.5rem;
 }
 
 .worries__item:nth-child(2) {
