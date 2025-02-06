@@ -1221,12 +1221,12 @@ input::placeholder {
 .mission__bg-text {
 	height: 100%;
 	left: 50%;
-	max-width: 1514px;
+	max-width: 1400px;
 	position: absolute;
 	top: -185px;
 	transform: translateX(-50%);
 	width: 100%;
-	width: 100vw;
+	width: 96vw;
 }
 
 .mission__bg-text img {
@@ -1675,6 +1675,10 @@ input::placeholder {
 
 .mission {
 	background-image: url("../images/common/bg-mission-sp.svg");
+}
+
+.mission__bg-text {
+	display: none;
 }
 
 .mission__box {
@@ -2321,10 +2325,6 @@ input::placeholder {
 .mission__heading {
 	font-size: 1.375rem;
 	margin-top: 1.25rem;
-}
-
-.mission__bg-text {
-	display: none;
 }
 
 .mission__heading-white {
