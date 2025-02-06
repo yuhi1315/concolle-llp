@@ -1,6 +1,5 @@
-/* リキッドレイアウト対応 */
 @use 'global' as *;
-
+/* === 表示/非表示切り替えのクラス start === */
 .md-none {
   display: block;
   @include mq('md') {
@@ -14,3 +13,4 @@
     display: block;
   }
 }
+/* === 表示/非表示切り替えのクラス end === */

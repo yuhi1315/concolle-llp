@@ -1,3 +1,5 @@
+/* === footer start === */
+
 .footer {
 	background-color: #f090a9;
 	padding: 1rem 0.46875rem;
@@ -12,6 +14,10 @@
 	line-height: 1.6;
 	text-align: center;
 }
+
+/* === footer end === */
+
+/* === header start === */
 
 .header__container {
 	align-items: center;
@@ -62,7 +68,9 @@
 	width: 100%;
 }
 
-/* 共通inner */
+/* === header end === */
+
+/* === inner start === */
 
 .inner {
 	margin-left: auto;
@@ -73,7 +81,9 @@
 	width: 100%;
 }
 
-/* リキッドレイアウト対応 */
+/* === inner end === */
+
+/* === 表示/非表示切り替えのクラス start === */
 
 .md-none {
 	display: block;
@@ -82,6 +92,10 @@
 .md-show {
 	display: none;
 }
+
+/* === 表示/非表示切り替えのクラス end === */
+
+/* === リセットcss start === */
 
 *,
 *::before,
@@ -235,75 +249,7 @@ button:hover {
 	opacity: 0.7;
 }
 
-.sub-title {
-	align-items: center;
-	display: flex;
-	margin: 0 auto;
-	position: relative;
-	width: -moz-fit-content;
-	width: fit-content;
-	z-index: 2;
-}
-
-.sub-title__star-left {
-	left: -3.75rem;
-	position: absolute;
-	top: 1.0625rem;
-}
-
-.sub-title__text {
-	-webkit-text-decoration-skip-ink: none;
-	align-items: center;
-	display: flex;
-	font-size: 2rem;
-	font-weight: 600;
-	letter-spacing: 0.04em;
-	line-height: 1.6;
-	text-align: center;
-	text-decoration-skip-ink: none;
-	text-underline-position: from-font;
-}
-
-.sub-title--small .sub-title__text {
-	font-size: 1.5rem;
-}
-
-.sub-title__star-right {
-	position: absolute;
-	right: -5.125rem;
-	top: -0.9375rem;
-}
-
-.sub-title__ranking {
-	-webkit-text-decoration-skip-ink: none;
-	color: #eb537b;
-	font-family: Quicksand;
-	font-size: 2.5rem;
-	font-weight: 700;
-	letter-spacing: 0.04em;
-	line-height: 1.6;
-	margin-left: 1rem;
-	text-align: center;
-	text-decoration-skip-ink: none;
-	text-underline-position: from-font;
-}
-
-.shop-history .sub-title__text {
-	font-size: 2rem;
-}
-
-.blog-list .sub-title__text {
-	align-items: baseline;
-}
-
-.sub-title__big {
-	font-family: Quicksand;
-	font-size: 3.5rem;
-	font-weight: 700;
-	letter-spacing: 0.04em;
-	line-height: 1.6;
-	text-align: center;
-}
+/* === リセットcss end === */
 
 .charm {
 	margin: 0 auto;
@@ -1869,52 +1815,6 @@ input::placeholder {
 
 .md-show {
 	display: block;
-}
-
-.sub-title__star-left {
-	left: -1.75rem;
-	top: 0.375rem;
-}
-
-.sub-title__star-left img {
-	height: 1.57875rem;
-	width: 1.241875rem;
-}
-
-.sub-title__text {
-	flex-direction: column;
-	font-size: 1rem;
-}
-
-.sub-title--small .sub-title__text {
-	font-size: 1rem;
-}
-
-.sub-title__star-right {
-	right: -2.1875rem;
-	top: -0.8125rem;
-}
-
-.sub-title__star-right img {
-	height: 1.985625rem;
-	width: 1.810625rem;
-}
-
-.sub-title__ranking {
-	font-size: 1.375rem;
-	margin-left: 0;
-}
-
-.shop-history .sub-title__text {
-	font-size: 1rem;
-}
-
-.blog-list .sub-title__text {
-	flex-direction: row;
-}
-
-.sub-title__big {
-	font-size: 2rem;
 }
 
 .charm {

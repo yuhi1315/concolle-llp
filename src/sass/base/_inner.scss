@@ -1,6 +1,5 @@
 @use 'global' as *;
-/* 共通inner */
-
+/* === inner start === */
 @if $startFrom == sp {
   .inner {
     width: 100%;
@@ -29,3 +28,4 @@
     }
   }
 }
+/* === inner end === */

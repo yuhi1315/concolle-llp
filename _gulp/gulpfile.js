@@ -174,7 +174,16 @@ const jsBabel = () => {
       // Babelでトランスパイル（ES6からES5へ変換）
       .pipe(
         babel({
-          presets: ['@babel/preset-env']
+          presets: [
+            [
+              '@babel/preset-env',
+              {
+                targets: {
+                  node: 'current'
+                }
+              }
+            ]
+          ]
         })
       )
       // 圧縮済みのファイルを出力先に保存
@@ -190,7 +199,7 @@ const browserSyncOption = {
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
 };
-const browserSyncReload = done => {
+const browserSyncReload = (done) => {
   browserSync.reload();
   done();
 };

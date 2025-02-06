@@ -1,5 +1,5 @@
 @use 'global' as *;
-
+/* === header start === */
 .header__container {
   padding-top: rem(16);
   display: flex;
@@ -65,3 +65,4 @@
     transform: translateY(rem(2)); /* 押下時に少し下に動かす */
   }
 }
+/* === header end === */
